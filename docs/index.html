@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuchenplan · Sommerlager 2026</title>
+  <meta name="description" content="Speiseplan, Rezepte und Einkaufsliste fürs Sommerlager 2026 — Mengen fertig berechnet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="brand">Kuchenplan</p>
+    <h1>Sommerlager 2026</h1>
+    <p class="lede">Speiseplan, Rezepte und Einkauf — Mengen für 42 Portionen (Mi–Sa +5 → 47), Daten dieses Jahres fest eingebacken.</p>
+    <nav class="tabs" role="tablist" aria-label="Bereiche">
+      <button type="button" class="tab is-active" data-panel="rechnung" role="tab" aria-selected="true">Rechnung</button>
+      <button type="button" class="tab" data-panel="menu" role="tab" aria-selected="false">Speiseplan</button>
+      <button type="button" class="tab" data-panel="recipes" role="tab" aria-selected="false">Rezepte</button>
+      <button type="button" class="tab" data-panel="shopping" role="tab" aria-selected="false">Einkauf</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="panel-rechnung" class="panel is-active" role="tabpanel">
+      <h2>Wie die Mengen entstehen</h2>
+      <p class="section-lead" id="calc-lead"></p>
+      <div class="calc-grid" id="calc-grid"></div>
+      <div class="formula-box" id="formula-box"></div>
+    </section>
+
+    <section id="panel-menu" class="panel" role="tabpanel" hidden>
+      <h2>Speiseplan</h2>
+      <p class="section-lead">Klick auf ein Gericht öffnet das Rezept mit skalierten Mengen.</p>
+      <div id="menu-board" class="menu-board"></div>
+    </section>
+
+    <section id="panel-recipes" class="panel" role="tabpanel" hidden>
+      <h2>Rezepte</h2>
+      <p class="section-lead">Pro Person / veggie; Skala wählbar für die Anzeige.</p>
+      <div class="toolbar">
+        <label class="field">
+          <span>Suche</span>
+          <input type="search" id="recipe-search" placeholder="Knödel, Spaghetti…" autocomplete="off" />
+        </label>
+        <label class="field">
+          <span>Skalierung anzeigen</span>
+          <select id="recipe-scale">
+            <option value="1">pro Person</option>
+            <option value="42" selected>× 42 (Basis)</option>
+            <option value="47">× 47 (mit +5)</option>
+            <option value="2">× 2 (Veggie)</option>
+          </select>
+        </label>
+      </div>
+      <div id="recipe-list" class="recipe-list"></div>
+    </section>
+
+    <section id="panel-shopping" class="panel" role="tabpanel" hidden>
+      <h2>Einkaufsliste</h2>
+      <p class="section-lead">Auf ganze Packungen gerundet. Klick auf eine Zutat zeigt die Rechnung.</p>
+      <div class="toolbar">
+        <label class="field">
+          <span>Suche</span>
+          <input type="search" id="shop-search" placeholder="Milch, Tomaten…" autocomplete="off" />
+        </label>
+        <label class="field">
+          <span>Geschäft</span>
+          <select id="shop-filter"><option value="">Alle</option></select>
+        </label>
+        <label class="field">
+          <span>Gang</span>
+          <select id="aisle-filter"><option value="">Alle</option></select>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="hide-done" />
+          Erledigte ausblenden
+        </label>
+      </div>
+      <div id="shop-list" class="shop-list"></div>
+    </section>
+  </main>
+
+  <aside id="drawer" class="drawer" hidden aria-live="polite">
+    <div class="drawer-backdrop" data-close></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <button type="button" class="drawer-close" data-close aria-label="Schließen">×</button>
+      <h2 id="drawer-title"></h2>
+      <div id="drawer-body"></div>
+    </div>
+  </aside>
+
+  <footer class="foot">
+    <p>Datenstand Sommerlager 2026 · offline nutzbar · Quelle: Küchenplan-Workbook</p>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,5690 @@
+{
+  "camp": {
+    "id": 1,
+    "name": "Sommerlager",
+    "year": 2026,
+    "notes": "Imported from küchenplan_26.xlsx; Kaiserschmarrn → Palatschinken"
+  },
+  "attendance": [
+    {
+      "label": "kinder",
+      "eater_type": "normal",
+      "count": 16.0,
+      "factor": 0.8,
+      "weighted": 12.8
+    },
+    {
+      "label": "kinder",
+      "eater_type": "strong_eater",
+      "count": 7.0,
+      "factor": 1.2,
+      "weighted": 8.4
+    },
+    {
+      "label": "kinder",
+      "eater_type": "veggie",
+      "count": 0.0,
+      "factor": 0.8,
+      "weighted": 0.0
+    },
+    {
+      "label": "leiter",
+      "eater_type": "normal",
+      "count": 15.0,
+      "factor": 1.2,
+      "weighted": 18.0
+    },
+    {
+      "label": "leiter",
+      "eater_type": "strong_eater",
+      "count": 0.0,
+      "factor": 1.5,
+      "weighted": 0.0
+    },
+    {
+      "label": "leiter",
+      "eater_type": "veggie",
+      "count": 2.0,
+      "factor": 1.2,
+      "weighted": 2.4
+    }
+  ],
+  "calculation": {
+    "weighted_raw": 41.6,
+    "portion_equivalents": 42.0,
+    "veggie_headcount": 2.0,
+    "formula": "qty = amount_per_person × scale × times_on_menu; scale = portion_equivalents (+ meal +N) for normal lines, veggie_headcount for veggie-only lines",
+    "rounding": "Shopping quantities ceil to whole packs; Tomaten Passiert/Gewürfelt in 500 g steps"
+  },
+  "menu": [
+    {
+      "day_index": 0,
+      "day": "Sonntag",
+      "meal": "Abend",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 1,
+      "notes": "Zucchinicremesuppe gestrichen (keine suppe 2025)",
+      "gluten_notes": null,
+      "recipes": [
+        "Bosner"
+      ]
+    },
+    {
+      "day_index": 1,
+      "day": "Montag",
+      "meal": "Frühstück",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    },
+    {
+      "day_index": 1,
+      "day": "Montag",
+      "meal": "Mittag",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 1,
+      "notes": "semmelknödel aus bosner",
+      "gluten_notes": "maisstärke, nudeln (susi)",
+      "recipes": [
+        "Grüner Salat",
+        "Putengeschnetzeltes"
+      ]
+    },
+    {
+      "day_index": 1,
+      "day": "Montag",
+      "meal": "Abend",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": "semmelknödel (susi bringt)",
+      "recipes": [
+        "Knödel"
+      ]
+    },
+    {
+      "day_index": 2,
+      "day": "Dienstag",
+      "meal": "Frühstück",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    },
+    {
+      "day_index": 2,
+      "day": "Dienstag",
+      "meal": "Mittag",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": "nudeln (susi)",
+      "recipes": [
+        "Grüner Salat",
+        "Gurkensalat",
+        "Spaghetti"
+      ]
+    },
+    {
+      "day_index": 2,
+      "day": "Dienstag",
+      "meal": "Abend",
+      "headcount_note": null,
+      "scale": 42.0,
+      "veggie_option": 1,
+      "notes": "palatschinken, knacker + smores",
+      "gluten_notes": "mehl (susi)",
+      "recipes": [
+        "Nudelsuppe",
+        "Palatschinken"
+      ]
+    },
+    {
+      "day_index": 3,
+      "day": "Mittwoch",
+      "meal": "Frühstück",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    },
+    {
+      "day_index": 3,
+      "day": "Mittwoch",
+      "meal": "Mittag",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 1,
+      "notes": null,
+      "gluten_notes": "semmel + süßes (susi)",
+      "recipes": [
+        "Lunchpaket"
+      ]
+    },
+    {
+      "day_index": 3,
+      "day": "Mittwoch",
+      "meal": "Abend",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 1,
+      "notes": "steckerlbrot (raini ?)",
+      "gluten_notes": "schnitzel (susi -> moritz/laura mitgeben)",
+      "recipes": [
+        "Kartoffelsalat",
+        "Putenschnitzel",
+        "Steckerlbrot"
+      ]
+    },
+    {
+      "day_index": 4,
+      "day": "Donnerstag",
+      "meal": "Frühstück",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    },
+    {
+      "day_index": 4,
+      "day": "Donnerstag",
+      "meal": "Mittag",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 1,
+      "notes": null,
+      "gluten_notes": "fleischlaibchen (susi)",
+      "recipes": [
+        "Fleischlaibchen"
+      ]
+    },
+    {
+      "day_index": 4,
+      "day": "Donnerstag",
+      "meal": "Abend",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 1,
+      "notes": "haschee + schinken",
+      "gluten_notes": "nudeln (susi)",
+      "recipes": [
+        "Fleckerlspeise",
+        "Gurkensalat",
+        "Karottensalat"
+      ]
+    },
+    {
+      "day_index": 5,
+      "day": "Freitag",
+      "meal": "Frühstück",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    },
+    {
+      "day_index": 5,
+      "day": "Freitag",
+      "meal": "Mittag",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": "backerbsen + knödel (susi kommt rauf)",
+      "recipes": [
+        "Backerbsensuppe",
+        "Süße Knödel"
+      ]
+    },
+    {
+      "day_index": 5,
+      "day": "Freitag",
+      "meal": "Abend",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 1,
+      "notes": null,
+      "gluten_notes": "alutasse",
+      "recipes": [
+        "Grillabend"
+      ]
+    },
+    {
+      "day_index": 6,
+      "day": "Samstag",
+      "meal": "Frühstück",
+      "headcount_note": "+5",
+      "scale": 47.0,
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": null,
+      "recipes": [
+        "Frühstück"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "name": "Backerbsensuppe",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Freitag Mittag (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Backerbsen",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Gemüsesuppe",
+          "unit": "l",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Karotten",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Bosner",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Sonntag Abend"
+      ],
+      "lines": [
+        {
+          "ingredient": "Currypulver",
+          "unit": "el",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "2 EL",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Frankfurter",
+          "unit": "stk",
+          "amount_per_person": 2.0,
+          "recipe_amount": 80.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "80.0 | 80 statt 100",
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Ketchup",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1.5 l",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Senf",
+          "unit": "kg",
+          "amount_per_person": 0.0075,
+          "recipe_amount": 0.3,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "0.3 l",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Weckerl",
+          "unit": "stk",
+          "amount_per_person": 2.0,
+          "recipe_amount": 80.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "80 statt 100 (applied from 2025 note) | 80 statt 100 (matched to Frankfurter)",
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1.5",
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Fleckerlspeise",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Donnerstag Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Fleckerl",
+          "unit": "kg",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Käse Gerieben",
+          "unit": "kg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Wursthaschee",
+          "unit": "kg",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.03,
+          "recipe_amount": 1.2,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Fleischlaibchen",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Donnerstag Mittag (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Butter",
+          "unit": "kg",
+          "amount_per_person": 0.0625,
+          "recipe_amount": 2.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Eier",
+          "unit": "stk",
+          "amount_per_person": 0.2,
+          "recipe_amount": 8.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Faschiertes",
+          "unit": "kg",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Kartoffelpürree",
+          "unit": "stk",
+          "amount_per_person": 0.45,
+          "recipe_amount": 18.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Ketchup",
+          "unit": "kg",
+          "amount_per_person": 0.00625,
+          "recipe_amount": 0.25,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "to serve",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Knoblauchgranulat",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "seasoning",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Knödelbrot",
+          "unit": "kg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Majoran",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.042499999999999996,
+          "recipe_amount": 1.7,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Mischgemüse",
+          "unit": "kg",
+          "amount_per_person": 0.0625,
+          "recipe_amount": 2.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "TK",
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Muskat-Nuss",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "seasoning",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Semmelbrösel",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": " (3/4 panieren, 1/4 masse)",
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.017499999999999998,
+          "recipe_amount": 0.7,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "anschwitzen",
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Öl",
+          "unit": "l",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Gemüselaibchen",
+          "unit": "stk",
+          "amount_per_person": 2.0,
+          "recipe_amount": 4.0,
+          "yield_portions": 2.0,
+          "audience": "veggie",
+          "is_side": 0,
+          "notes": "TK | veggie-only; was 4 stk in 40-portion recipe",
+          "aisle": "Tiefkühl"
+        }
+      ]
+    },
+    {
+      "name": "Frühstück",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 6,
+      "meals": [
+        "Montag Frühstück",
+        "Dienstag Frühstück",
+        "Mittwoch Frühstück (+5)",
+        "Donnerstag Frühstück (+5)",
+        "Freitag Frühstück (+5)",
+        "Samstag Frühstück (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Bananen",
+          "unit": "kg",
+          "amount_per_person": 0.015,
+          "recipe_amount": 0.6,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Obst"
+        },
+        {
+          "ingredient": "Brot",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Butter",
+          "unit": "kg",
+          "amount_per_person": 0.0025,
+          "recipe_amount": 0.1,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Choco-Chips",
+          "unit": "pkg",
+          "amount_per_person": 0.0125,
+          "recipe_amount": 0.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "CiniMinis",
+          "unit": "pkg",
+          "amount_per_person": 0.015,
+          "recipe_amount": 0.6,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Cremehonig",
+          "unit": "kg",
+          "amount_per_person": 0.0025,
+          "recipe_amount": 0.1,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Joghurt",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Kaffee",
+          "unit": "kg",
+          "amount_per_person": 0.01,
+          "recipe_amount": 0.4,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Kakao",
+          "unit": "kg",
+          "amount_per_person": 0.0025,
+          "recipe_amount": 0.1,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Nektarinen",
+          "unit": "kg",
+          "amount_per_person": 0.015,
+          "recipe_amount": 0.6,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Obst"
+        },
+        {
+          "ingredient": "Nutella",
+          "unit": "kg",
+          "amount_per_person": 0.00625,
+          "recipe_amount": 0.25,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Weintrauben",
+          "unit": "kg",
+          "amount_per_person": 0.01,
+          "recipe_amount": 0.4,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Obst"
+        }
+      ]
+    },
+    {
+      "name": "Grillabend",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Freitag Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Bernerwürstel",
+          "unit": "stk",
+          "amount_per_person": 0.5,
+          "recipe_amount": 20.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Bratwürstel",
+          "unit": "stk",
+          "amount_per_person": 0.75,
+          "recipe_amount": 30.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Brot",
+          "unit": "kg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Champignons",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Frankfurter",
+          "unit": "stk",
+          "amount_per_person": 0.5,
+          "recipe_amount": 20.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Joghurt",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Kartoffeln",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Kräuter",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Käsegriller",
+          "unit": "stk",
+          "amount_per_person": 0.375,
+          "recipe_amount": 15.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Käsekrainer",
+          "unit": "stk",
+          "amount_per_person": 0.25,
+          "recipe_amount": 10.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Mais",
+          "unit": "pkg",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Paprika",
+          "unit": "stk",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Paprika",
+          "unit": "stk",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Sauerrahm",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Zucchini",
+          "unit": "stk",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Haloumi",
+          "unit": "g",
+          "amount_per_person": 800.0,
+          "recipe_amount": 1600.0,
+          "yield_portions": 2.0,
+          "audience": "veggie",
+          "is_side": 0,
+          "notes": "veggie grill option; was 8 pkg in 40-portion recipe | was 8 pkg; 200 g/Packung → 1600 g for 2 veggies",
+          "aisle": "Milchprodukte"
+        }
+      ]
+    },
+    {
+      "name": "Grüner Salat",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 2,
+      "meals": [
+        "Montag Mittag",
+        "Dienstag Mittag"
+      ],
+      "lines": [
+        {
+          "ingredient": "Essig",
+          "unit": "l",
+          "amount_per_person": 0.0025,
+          "recipe_amount": 0.1,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Olivenöl",
+          "unit": "l",
+          "amount_per_person": 0.00375,
+          "recipe_amount": 0.15,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing ~4 ml/person",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Pfeffer",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "seasoning for salad",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Salat",
+          "unit": "stk",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Salz",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "seasoning for salad",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Senf",
+          "unit": "kg",
+          "amount_per_person": 0.00125,
+          "recipe_amount": 0.05,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        }
+      ]
+    },
+    {
+      "name": "Gurkensalat",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 2,
+      "meals": [
+        "Dienstag Mittag",
+        "Donnerstag Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Dill",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Essig",
+          "unit": "l",
+          "amount_per_person": 0.00375,
+          "recipe_amount": 0.15,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "vinegar-forward salad",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Olivenöl",
+          "unit": "l",
+          "amount_per_person": 0.002,
+          "recipe_amount": 0.08,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Salatgurken",
+          "unit": "stk",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Karottensalat",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Donnerstag Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Karotten",
+          "unit": "kg",
+          "amount_per_person": 0.03,
+          "recipe_amount": 1.2,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Olivenöl",
+          "unit": "l",
+          "amount_per_person": 0.00125,
+          "recipe_amount": 0.05,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Tafelessig",
+          "unit": "l",
+          "amount_per_person": 0.002,
+          "recipe_amount": 0.08,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelsalat",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Mittwoch Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Essig",
+          "unit": "l",
+          "amount_per_person": 0.00625,
+          "recipe_amount": 0.25,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Kartoffeln",
+          "unit": "kg",
+          "amount_per_person": 0.1125,
+          "recipe_amount": 4.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "speckig",
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Olivenöl",
+          "unit": "l",
+          "amount_per_person": 0.00625,
+          "recipe_amount": 0.25,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "dressing",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.01,
+          "recipe_amount": 0.4,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "was 4 kg for 40 — treated as typo, set to 0.4 kg",
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Knödel",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Montag Abend"
+      ],
+      "lines": [
+        {
+          "ingredient": "Grammelknödel",
+          "unit": "stk",
+          "amount_per_person": 0.5,
+          "recipe_amount": 20.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Gulaschsaft",
+          "unit": "kg",
+          "amount_per_person": 0.045,
+          "recipe_amount": 1.8,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Hascheeknödel",
+          "unit": "stk",
+          "amount_per_person": 1.075,
+          "recipe_amount": 43.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Kraut",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "Sackerl, nicht dose | Sackerl 500 g; was 8 pkg → 4 kg",
+          "aisle": "Knabber-Zeug, Süßes, Koserven"
+        },
+        {
+          "ingredient": "Speckknödel",
+          "unit": "stk",
+          "amount_per_person": 0.85,
+          "recipe_amount": 34.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Spinatknödel",
+          "unit": "stk",
+          "amount_per_person": 5.0,
+          "recipe_amount": 10.0,
+          "yield_portions": 2.0,
+          "audience": "veggie",
+          "is_side": 0,
+          "notes": "veggie-only; 10 stk for 2 vegetarians",
+          "aisle": "Tiefkühl"
+        }
+      ]
+    },
+    {
+      "name": "Lunchpaket",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Mittwoch Mittag (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Essiggurkerl",
+          "unit": "pkg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Extrawurst",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Gouda",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Jausenäpfel",
+          "unit": "stk",
+          "amount_per_person": 1.0,
+          "recipe_amount": 40.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Obst"
+        },
+        {
+          "ingredient": "Semmerl",
+          "unit": "stk",
+          "amount_per_person": 2.0,
+          "recipe_amount": 80.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "bedarf erheben",
+          "aisle": "Frühstück, Backen"
+        }
+      ]
+    },
+    {
+      "name": "Nudelsuppe",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Dienstag Abend"
+      ],
+      "lines": [
+        {
+          "ingredient": "Backerbsen",
+          "unit": "kg",
+          "amount_per_person": 0.0125,
+          "recipe_amount": 0.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Gemüsesuppe",
+          "unit": "l",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Karotten",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Schnittlauch",
+          "unit": "pkg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Suppennudeln",
+          "unit": "kg",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        }
+      ]
+    },
+    {
+      "name": "Palatschinken",
+      "notes": "Scaled from 5 → 40 portions (×8)",
+      "source": "https://www.gutekueche.at/einfaches-palatschinkenrezept-rezept-4278",
+      "on_menu": 1,
+      "meals": [
+        "Dienstag Abend"
+      ],
+      "lines": [
+        {
+          "ingredient": "Eier",
+          "unit": "stk",
+          "amount_per_person": 0.4,
+          "recipe_amount": 16.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "2 Stk × 8",
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Marmelade",
+          "unit": "kg",
+          "amount_per_person": 0.016,
+          "recipe_amount": 0.64,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "4 EL × 8 ≈ 640 g",
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Mehl",
+          "unit": "kg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "250 g × 8 (Weizenmehl glatt)",
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "500 ml × 8",
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Salz",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1 Prise × 8 → 1 Packung fürs Lager",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Staubzucker",
+          "unit": "kg",
+          "amount_per_person": 0.002,
+          "recipe_amount": 0.08,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1 EL × 8 ≈ 80 g",
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Öl",
+          "unit": "el",
+          "amount_per_person": 0.2,
+          "recipe_amount": 8.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1 Schuss/Pfanne ≈ 1 EL × 8",
+          "aisle": "Gewürze, Essig & Öl"
+        }
+      ]
+    },
+    {
+      "name": "Putengeschnetzeltes",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Montag Mittag"
+      ],
+      "lines": [
+        {
+          "ingredient": "Champignons",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Eier",
+          "unit": "stk",
+          "amount_per_person": 0.25,
+          "recipe_amount": 10.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Kräuter",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Maizena",
+          "unit": "el",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Putenbrust",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Sauerrahm",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Schlagobers",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Spätzle",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Putenschnitzel",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Mittwoch Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Eier",
+          "unit": "stk",
+          "amount_per_person": 0.425,
+          "recipe_amount": 17.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Erbsen",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "separat",
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Mehl",
+          "unit": "kg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Milch",
+          "unit": "l",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "1 l for panieren",
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Putenbrust",
+          "unit": "kg",
+          "amount_per_person": 0.15,
+          "recipe_amount": 6.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Reis",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Semmelbrösel",
+          "unit": "kg",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Öl",
+          "unit": "l",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Vegane Schnitzel",
+          "unit": "stk",
+          "amount_per_person": 2.0,
+          "recipe_amount": 4.0,
+          "yield_portions": 2.0,
+          "audience": "veggie",
+          "is_side": 0,
+          "notes": "veggie-only; was 4 stk in 40-portion recipe",
+          "aisle": "Fleisch"
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Dienstag Mittag"
+      ],
+      "lines": [
+        {
+          "ingredient": "Basilikum",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Faschiertes",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "extra anbraten!",
+          "aisle": "Fleisch"
+        },
+        {
+          "ingredient": "Karotten",
+          "unit": "kg",
+          "amount_per_person": 0.0625,
+          "recipe_amount": 2.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Ketchup",
+          "unit": "kg",
+          "amount_per_person": 0.0075,
+          "recipe_amount": 0.3,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "optional for sauce/serving",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Olivenöl",
+          "unit": "l",
+          "amount_per_person": 0.00125,
+          "recipe_amount": 0.05,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "for sauce",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Oregano",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Parmesan",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Sellerie",
+          "unit": "stk",
+          "amount_per_person": 0.05,
+          "recipe_amount": 2.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Spaghetti",
+          "unit": "kg",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Nudeln, Einlalgen"
+        },
+        {
+          "ingredient": "Thymian",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Tomaten Gewürfelt",
+          "unit": "g",
+          "amount_per_person": 25.0,
+          "recipe_amount": 1000.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "was 2 pkg; counted as 500 g packs",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Tomaten Passiert",
+          "unit": "g",
+          "amount_per_person": 75.0,
+          "recipe_amount": 3000.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "was 3 pkg; 1 pkg = 1 l ≈ 1000 g",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Tomatenmark",
+          "unit": "Tube",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": "was pkg → Tuben",
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Zucchini",
+          "unit": "stk",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gemüse"
+        }
+      ]
+    },
+    {
+      "name": "Steckerlbrot",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Mittwoch Abend (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Mehl",
+          "unit": "kg",
+          "amount_per_person": 0.0625,
+          "recipe_amount": 2.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Trockengerm",
+          "unit": "pkg",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Backzutaten"
+        }
+      ]
+    },
+    {
+      "name": "Süße Knödel",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 1,
+      "meals": [
+        "Freitag Mittag (+5)"
+      ],
+      "lines": [
+        {
+          "ingredient": "Butter",
+          "unit": "kg",
+          "amount_per_person": 0.1,
+          "recipe_amount": 4.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Erdbeerknödel",
+          "unit": "stk",
+          "amount_per_person": 0.875,
+          "recipe_amount": 35.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Marillenknödel",
+          "unit": "stk",
+          "amount_per_person": 0.875,
+          "recipe_amount": 35.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Nougatknödel",
+          "unit": "stk",
+          "amount_per_person": 0.875,
+          "recipe_amount": 35.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Tiefkühl"
+        },
+        {
+          "ingredient": "Semmelbrösel",
+          "unit": "kg",
+          "amount_per_person": 0.0375,
+          "recipe_amount": 1.5,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Staubzucker",
+          "unit": "kg",
+          "amount_per_person": 0.0075,
+          "recipe_amount": 0.3,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        },
+        {
+          "ingredient": "Zimt",
+          "unit": "pkg",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Zucker",
+          "unit": "kg",
+          "amount_per_person": 0.075,
+          "recipe_amount": 3.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 0,
+          "notes": null,
+          "aisle": "Frühstück, Backen"
+        }
+      ]
+    },
+    {
+      "name": "Zucchinicremesuppe",
+      "notes": null,
+      "source": "küchenplan_26.xlsx",
+      "on_menu": 0,
+      "meals": [],
+      "lines": [
+        {
+          "ingredient": "Gemüsesuppe",
+          "unit": "l",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        },
+        {
+          "ingredient": "Schlagobers",
+          "unit": "l",
+          "amount_per_person": 0.15,
+          "recipe_amount": 6.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Milchprodukte"
+        },
+        {
+          "ingredient": "Zucchini",
+          "unit": "stk",
+          "amount_per_person": 0.25,
+          "recipe_amount": 10.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": "keine suppe 2025",
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Zwiebel",
+          "unit": "stk",
+          "amount_per_person": 0.125,
+          "recipe_amount": 5.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gemüse"
+        },
+        {
+          "ingredient": "Öl",
+          "unit": "el",
+          "amount_per_person": 0.025,
+          "recipe_amount": 1.0,
+          "yield_portions": 40.0,
+          "audience": "all",
+          "is_side": 1,
+          "notes": null,
+          "aisle": "Gewürze, Essig & Öl"
+        }
+      ]
+    }
+  ],
+  "shopping": [
+    {
+      "ingredient": "Basilikum",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 1.05,
+      "quantity": 2,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Currypulver",
+      "unit": "el",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.1,
+      "quantity": 3,
+      "recipes": [
+        "Bosner"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "el",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Dill",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.225,
+      "quantity": 3,
+      "recipes": [
+        "Gurkensalat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Gurkensalat",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 2,
+          "qty_one_cook": 1.1125,
+          "qty_total": 2.225,
+          "portions": 44.5,
+          "portion_servings": 89.0,
+          "meals": [
+            "Dienstag Mittag",
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Essig",
+      "unit": "l",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.8375,
+      "quantity": 1,
+      "recipes": [
+        "Grüner Salat",
+        "Gurkensalat",
+        "Kartoffelsalat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grüner Salat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.0025,
+          "times_on_menu": 2,
+          "qty_one_cook": 0.105,
+          "qty_total": 0.21,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        },
+        {
+          "recipe": "Gurkensalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00375,
+          "times_on_menu": 2,
+          "qty_one_cook": 0.166875,
+          "qty_total": 0.33375,
+          "portions": 44.5,
+          "portion_servings": 89.0,
+          "meals": [
+            "Dienstag Mittag",
+            "Donnerstag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Kartoffelsalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00625,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.29375,
+          "qty_total": 0.29375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Essiggurkerl",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.35,
+      "quantity": 3,
+      "recipes": [
+        "Lunchpaket"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Lunchpaket",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Gemüsesuppe",
+      "unit": "l",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "DM",
+      "audience": "all",
+      "quantity_raw": 11.125,
+      "quantity": 12,
+      "recipes": [
+        "Backerbsensuppe",
+        "Nudelsuppe"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Backerbsensuppe",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.875,
+          "qty_total": 5.875,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Nudelsuppe",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.25,
+          "qty_total": 5.25,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Ketchup",
+      "unit": "kg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Spende Spitz",
+      "audience": "all",
+      "quantity_raw": 2.18375,
+      "quantity": 3,
+      "recipes": [
+        "Bosner",
+        "Fleischlaibchen",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.575,
+          "qty_total": 1.575,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        },
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.00625,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.29375,
+          "qty_total": 0.29375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0075,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.315,
+          "qty_total": 0.315,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Knoblauchgranulat",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kräuter",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.225,
+      "quantity": 3,
+      "recipes": [
+        "Grillabend",
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Majoran",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Muskat-Nuss",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Olivenöl",
+      "unit": "l",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.898,
+      "quantity": 1,
+      "recipes": [
+        "Grüner Salat",
+        "Gurkensalat",
+        "Karottensalat",
+        "Kartoffelsalat",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grüner Salat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00375,
+          "times_on_menu": 2,
+          "qty_one_cook": 0.1575,
+          "qty_total": 0.315,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        },
+        {
+          "recipe": "Gurkensalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.002,
+          "times_on_menu": 2,
+          "qty_one_cook": 0.089,
+          "qty_total": 0.178,
+          "portions": 44.5,
+          "portion_servings": 89.0,
+          "meals": [
+            "Dienstag Mittag",
+            "Donnerstag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Karottensalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00125,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.05875,
+          "qty_total": 0.05875,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Kartoffelsalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00625,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.29375,
+          "qty_total": 0.29375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.00125,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.0525,
+          "qty_total": 0.0525,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Oregano",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.05,
+      "quantity": 2,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Pfeffer",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.1,
+      "quantity": 3,
+      "recipes": [
+        "Grüner Salat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grüner Salat",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 2,
+          "qty_one_cook": 1.05,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Salz",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.15,
+      "quantity": 4,
+      "recipes": [
+        "Grüner Salat",
+        "Palatschinken"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grüner Salat",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 2,
+          "qty_one_cook": 1.05,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        },
+        {
+          "recipe": "Palatschinken",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Senf",
+      "unit": "kg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.42,
+      "quantity": 1,
+      "recipes": [
+        "Bosner",
+        "Grüner Salat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0075,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.315,
+          "qty_total": 0.315,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        },
+        {
+          "recipe": "Grüner Salat",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.00125,
+          "times_on_menu": 2,
+          "qty_one_cook": 0.0525,
+          "qty_total": 0.105,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Tafelessig",
+      "unit": "l",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.094,
+      "quantity": 1,
+      "recipes": [
+        "Karottensalat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Karottensalat",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.002,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.094,
+          "qty_total": 0.094,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Thymian",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.05,
+      "quantity": 2,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Tomaten Gewürfelt",
+      "unit": "g",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1050.0,
+      "quantity": 1500,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "g",
+          "audience": "all",
+          "amount_per_person": 25.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 1050.0,
+          "qty_total": 1050.0,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Tomaten Passiert",
+      "unit": "g",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3150.0,
+      "quantity": 3500,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "g",
+          "audience": "all",
+          "amount_per_person": 75.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 3150.0,
+          "qty_total": 3150.0,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Tomatenmark",
+      "unit": "Tube",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.15,
+      "quantity": 4,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "Tube",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.15,
+          "qty_total": 3.15,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Zimt",
+      "unit": "pkg",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Süße Knödel",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Öl",
+      "unit": "el",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 8.4,
+      "quantity": 9,
+      "recipes": [
+        "Fleischlaibchen",
+        "Palatschinken",
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Palatschinken",
+          "unit": "el",
+          "audience": "all",
+          "amount_per_person": 0.2,
+          "times_on_menu": 1,
+          "qty_one_cook": 8.4,
+          "qty_total": 8.4,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Öl",
+      "unit": "l",
+      "aisle": "Gewürze, Essig & Öl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.7,
+      "quantity": 5,
+      "recipes": [
+        "Fleischlaibchen",
+        "Palatschinken",
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Palatschinken",
+          "unit": "el",
+          "audience": "all",
+          "amount_per_person": 0.2,
+          "times_on_menu": 1,
+          "qty_one_cook": 8.4,
+          "qty_total": 8.4,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Brot",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 9.15,
+      "quantity": 10,
+      "recipes": [
+        "Frühstück",
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 6,
+          "qty_one_cook": 1.133333,
+          "qty_total": 6.8,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Grillabend",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Choco-Chips",
+      "unit": "pkg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.4,
+      "quantity": 4,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.0125,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.566667,
+          "qty_total": 3.4,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "CiniMinis",
+      "unit": "pkg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 4.08,
+      "quantity": 5,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.015,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.68,
+          "qty_total": 4.08,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Cremehonig",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Spende Spitz",
+      "audience": "all",
+      "quantity_raw": 0.68,
+      "quantity": 1,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0025,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.113333,
+          "qty_total": 0.68,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kaffee",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.72,
+      "quantity": 3,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.01,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.453333,
+          "qty_total": 2.72,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kakao",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.68,
+      "quantity": 1,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0025,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.113333,
+          "qty_total": 0.68,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Knödelbrot",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Spende Honeder",
+      "audience": "all",
+      "quantity_raw": 2.35,
+      "quantity": 3,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Maizena",
+      "unit": "el",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.1,
+      "quantity": 3,
+      "recipes": [
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "el",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Marmelade",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Spende Spitz",
+      "audience": "all",
+      "quantity_raw": 0.672,
+      "quantity": 1,
+      "recipes": [
+        "Palatschinken"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Palatschinken",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.016,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.672,
+          "qty_total": 0.672,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Mehl",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.2125,
+      "quantity": 7,
+      "recipes": [
+        "Palatschinken",
+        "Putenschnitzel",
+        "Steckerlbrot"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Palatschinken",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Steckerlbrot",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0625,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.9375,
+          "qty_total": 2.9375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Nutella",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.7,
+      "quantity": 2,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.00625,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.283333,
+          "qty_total": 1.7,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Semmelbrösel",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Spende Honeder",
+      "audience": "all",
+      "quantity_raw": 5.2875,
+      "quantity": 6,
+      "recipes": [
+        "Fleischlaibchen",
+        "Putenschnitzel",
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Süße Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.7625,
+          "qty_total": 1.7625,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Semmerl",
+      "unit": "stk",
+      "aisle": "Frühstück, Backen",
+      "shop": "Bäcker vor Ort",
+      "audience": "all",
+      "quantity_raw": 94.0,
+      "quantity": 94,
+      "recipes": [
+        "Lunchpaket"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Lunchpaket",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 2.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 94.0,
+          "qty_total": 94.0,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Staubzucker",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 0.4365,
+      "quantity": 1,
+      "recipes": [
+        "Palatschinken",
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Palatschinken",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.002,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.084,
+          "qty_total": 0.084,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Süße Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0075,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.3525,
+          "qty_total": 0.3525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Weckerl",
+      "unit": "stk",
+      "aisle": "Frühstück, Backen",
+      "shop": "Spende/Metro?",
+      "audience": "all",
+      "quantity_raw": 84.0,
+      "quantity": 84,
+      "recipes": [
+        "Bosner"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 2.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 84.0,
+          "qty_total": 84.0,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Zucker",
+      "unit": "kg",
+      "aisle": "Frühstück, Backen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.525,
+      "quantity": 4,
+      "recipes": [
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Süße Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.525,
+          "qty_total": 3.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Backerbsen",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.7,
+      "quantity": 2,
+      "recipes": [
+        "Backerbsensuppe",
+        "Nudelsuppe"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Backerbsensuppe",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Nudelsuppe",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0125,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.525,
+          "qty_total": 0.525,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Fleckerl",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.525,
+      "quantity": 4,
+      "recipes": [
+        "Fleckerlspeise"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleckerlspeise",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.525,
+          "qty_total": 3.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kartoffelpürree",
+      "unit": "stk",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 21.15,
+      "quantity": 22,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.45,
+          "times_on_menu": 1,
+          "qty_one_cook": 21.15,
+          "qty_total": 21.15,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Reis",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.7625,
+      "quantity": 2,
+      "recipes": [
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.7625,
+          "qty_total": 1.7625,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Spaghetti",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 5.25,
+      "quantity": 6,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.25,
+          "qty_total": 5.25,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Spätzle",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.2,
+      "quantity": 5,
+      "recipes": [
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.2,
+          "qty_total": 4.2,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Suppennudeln",
+      "unit": "kg",
+      "aisle": "Nudeln, Einlalgen",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 5.25,
+      "quantity": 6,
+      "recipes": [
+        "Nudelsuppe"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Nudelsuppe",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.25,
+          "qty_total": 5.25,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Trockengerm",
+      "unit": "pkg",
+      "aisle": "Backzutaten",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 5.875,
+      "quantity": 6,
+      "recipes": [
+        "Steckerlbrot"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Steckerlbrot",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.875,
+          "qty_total": 5.875,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kraut",
+      "unit": "kg",
+      "aisle": "Knabber-Zeug, Süßes, Koserven",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.2,
+      "quantity": 5,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.2,
+          "qty_total": 4.2,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Champignons",
+      "unit": "kg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.575,
+      "quantity": 2,
+      "recipes": [
+        "Grillabend",
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.575,
+          "qty_total": 1.575,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Champignons",
+      "unit": "pkg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Grillabend",
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.575,
+          "qty_total": 1.575,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Karotten",
+      "unit": "kg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.26,
+      "quantity": 7,
+      "recipes": [
+        "Backerbsensuppe",
+        "Karottensalat",
+        "Nudelsuppe",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Backerbsensuppe",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Karottensalat",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.03,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.41,
+          "qty_total": 1.41,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Nudelsuppe",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0625,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.625,
+          "qty_total": 2.625,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Kartoffeln",
+      "unit": "kg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 9.9875,
+      "quantity": 10,
+      "recipes": [
+        "Grillabend",
+        "Kartoffelsalat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.7,
+          "qty_total": 4.7,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Kartoffelsalat",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.2875,
+          "qty_total": 5.2875,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Mais",
+      "unit": "pkg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.525,
+      "quantity": 4,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.525,
+          "qty_total": 3.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Paprika",
+      "unit": "stk",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.7,
+      "quantity": 5,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.7,
+          "qty_total": 4.7,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Salat",
+      "unit": "stk",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.3,
+      "quantity": 7,
+      "recipes": [
+        "Grüner Salat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grüner Salat",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 2,
+          "qty_one_cook": 3.15,
+          "qty_total": 6.3,
+          "portions": 42.0,
+          "portion_servings": 84.0,
+          "meals": [
+            "Montag Mittag",
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Salatgurken",
+      "unit": "stk",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 8.9,
+      "quantity": 9,
+      "recipes": [
+        "Gurkensalat"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Gurkensalat",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 2,
+          "qty_one_cook": 4.45,
+          "qty_total": 8.9,
+          "portions": 44.5,
+          "portion_servings": 89.0,
+          "meals": [
+            "Dienstag Mittag",
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Sellerie",
+      "unit": "stk",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.1,
+      "quantity": 3,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Zucchini",
+      "unit": "stk",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.675,
+      "quantity": 7,
+      "recipes": [
+        "Grillabend",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.525,
+          "qty_total": 3.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.15,
+          "qty_total": 3.15,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Zwiebel",
+      "unit": "kg",
+      "aisle": "Gemüse",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.9025,
+      "quantity": 7,
+      "recipes": [
+        "Bosner",
+        "Fleckerlspeise",
+        "Fleischlaibchen",
+        "Kartoffelsalat",
+        "Putengeschnetzeltes",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.575,
+          "qty_total": 1.575,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        },
+        {
+          "recipe": "Fleckerlspeise",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.03,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.41,
+          "qty_total": 1.41,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.017499999999999998,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.8225,
+          "qty_total": 0.8225,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Kartoffelsalat",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.01,
+          "times_on_menu": 1,
+          "qty_one_cook": 0.47,
+          "qty_total": 0.47,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0375,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.575,
+          "qty_total": 1.575,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Bananen",
+      "unit": "kg",
+      "aisle": "Obst",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.08,
+      "quantity": 5,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.015,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.68,
+          "qty_total": 4.08,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Jausenäpfel",
+      "unit": "stk",
+      "aisle": "Obst",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 47.0,
+      "quantity": 47,
+      "recipes": [
+        "Lunchpaket"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Lunchpaket",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 1.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 47.0,
+          "qty_total": 47.0,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Nektarinen",
+      "unit": "kg",
+      "aisle": "Obst",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 4.08,
+      "quantity": 5,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.015,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.68,
+          "qty_total": 4.08,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Weintrauben",
+      "unit": "kg",
+      "aisle": "Obst",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 2.72,
+      "quantity": 3,
+      "recipes": [
+        "Frühstück"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.01,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.453333,
+          "qty_total": 2.72,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Bernerwürstel",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 23.5,
+      "quantity": 24,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.5,
+          "times_on_menu": 1,
+          "qty_one_cook": 23.5,
+          "qty_total": 23.5,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Bratwürstel",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 35.25,
+      "quantity": 36,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.75,
+          "times_on_menu": 1,
+          "qty_one_cook": 35.25,
+          "qty_total": 35.25,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Extrawurst",
+      "unit": "kg",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Lunchpaket"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Lunchpaket",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Faschiertes",
+      "unit": "kg",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 10.075,
+      "quantity": 11,
+      "recipes": [
+        "Fleischlaibchen",
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.875,
+          "qty_total": 5.875,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Spaghetti",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.2,
+          "qty_total": 4.2,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Frankfurter",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 107.5,
+      "quantity": 108,
+      "recipes": [
+        "Bosner",
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Bosner",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 2.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 84.0,
+          "qty_total": 84.0,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Sonntag Abend"
+          ]
+        },
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.5,
+          "times_on_menu": 1,
+          "qty_one_cook": 23.5,
+          "qty_total": 23.5,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Käsegriller",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 17.625,
+      "quantity": 18,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.375,
+          "times_on_menu": 1,
+          "qty_one_cook": 17.625,
+          "qty_total": 17.625,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Käsekrainer",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 11.75,
+      "quantity": 12,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.25,
+          "times_on_menu": 1,
+          "qty_one_cook": 11.75,
+          "qty_total": 11.75,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Putenbrust",
+      "unit": "kg",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 11.25,
+      "quantity": 12,
+      "recipes": [
+        "Putengeschnetzeltes",
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.2,
+          "qty_total": 4.2,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.15,
+          "times_on_menu": 1,
+          "qty_one_cook": 7.05,
+          "qty_total": 7.05,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Vegane Schnitzel",
+      "unit": "stk",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "veggie",
+      "quantity_raw": 4.0,
+      "quantity": 4,
+      "recipes": [
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "stk",
+          "audience": "veggie",
+          "amount_per_person": 2.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.0,
+          "qty_total": 4.0,
+          "portions": 2.0,
+          "portion_servings": 2.0,
+          "meals": [
+            "Mittwoch Abend (+5→2)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Wursthaschee",
+      "unit": "kg",
+      "aisle": "Fleisch",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 3.525,
+      "quantity": 4,
+      "recipes": [
+        "Fleckerlspeise"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleckerlspeise",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 3.525,
+          "qty_total": 3.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Butter",
+      "unit": "kg",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 8.3175,
+      "quantity": 9,
+      "recipes": [
+        "Fleischlaibchen",
+        "Frühstück",
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0625,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.9375,
+          "qty_total": 2.9375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0025,
+          "times_on_menu": 6,
+          "qty_one_cook": 0.113333,
+          "qty_total": 0.68,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Süße Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.7,
+          "qty_total": 4.7,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Eier",
+      "unit": "stk",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 56.675,
+      "quantity": 57,
+      "recipes": [
+        "Fleischlaibchen",
+        "Palatschinken",
+        "Putengeschnetzeltes",
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.2,
+          "times_on_menu": 1,
+          "qty_one_cook": 9.4,
+          "qty_total": 9.4,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Palatschinken",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.4,
+          "times_on_menu": 1,
+          "qty_one_cook": 16.8,
+          "qty_total": 16.8,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.25,
+          "times_on_menu": 1,
+          "qty_one_cook": 10.5,
+          "qty_total": 10.5,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.425,
+          "times_on_menu": 1,
+          "qty_one_cook": 19.975,
+          "qty_total": 19.975,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Gouda",
+      "unit": "kg",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Lunchpaket"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Lunchpaket",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Haloumi",
+      "unit": "g",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "veggie",
+      "quantity_raw": 1600.0,
+      "quantity": 1600,
+      "recipes": [
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "g",
+          "audience": "veggie",
+          "amount_per_person": 800.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 1600.0,
+          "qty_total": 1600.0,
+          "portions": 2.0,
+          "portion_servings": 2.0,
+          "meals": [
+            "Freitag Abend (+5→2)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Joghurt",
+      "unit": "kg",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 6.8,
+      "quantity": 7,
+      "recipes": [
+        "Frühstück",
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 6,
+          "qty_one_cook": 1.133333,
+          "qty_total": 6.8,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Grillabend",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Joghurt",
+      "unit": "l",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Frühstück",
+        "Grillabend"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Frühstück",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 6,
+          "qty_one_cook": 1.133333,
+          "qty_total": 6.8,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Grillabend",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Käse Gerieben",
+      "unit": "kg",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.35,
+      "quantity": 3,
+      "recipes": [
+        "Fleckerlspeise"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleckerlspeise",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.35,
+          "qty_total": 2.35,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Milch",
+      "unit": "l",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 44.8975,
+      "quantity": 45,
+      "recipes": [
+        "Fleischlaibchen",
+        "Frühstück",
+        "Palatschinken",
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.1175,
+          "times_on_menu": 1,
+          "qty_one_cook": 5.5225,
+          "qty_total": 5.5225,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Frühstück",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.125,
+          "times_on_menu": 6,
+          "qty_one_cook": 5.666667,
+          "qty_total": 34.0,
+          "portions": 45.3333,
+          "portion_servings": 272.0,
+          "meals": [
+            "Montag Frühstück",
+            "Dienstag Frühstück",
+            "Mittwoch Frühstück (+5→47)",
+            "Donnerstag Frühstück (+5→47)",
+            "Freitag Frühstück (+5→47)",
+            "Samstag Frühstück (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Palatschinken",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.1,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.2,
+          "qty_total": 4.2,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        },
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Parmesan",
+      "unit": "pkg",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.05,
+      "quantity": 2,
+      "recipes": [
+        "Spaghetti"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Spaghetti",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Sauerrahm",
+      "unit": "l",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.225,
+      "quantity": 3,
+      "recipes": [
+        "Grillabend",
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Grillabend",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Abend (+5→47)"
+          ]
+        },
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Schlagobers",
+      "unit": "l",
+      "aisle": "Milchprodukte",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 1.05,
+      "quantity": 2,
+      "recipes": [
+        "Putengeschnetzeltes"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putengeschnetzeltes",
+          "unit": "l",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.05,
+          "qty_total": 1.05,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Mittag"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Erbsen",
+      "unit": "kg",
+      "aisle": "Tiefkühl",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 1.175,
+      "quantity": 2,
+      "recipes": [
+        "Putenschnitzel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Putenschnitzel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.025,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.175,
+          "qty_total": 1.175,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Mittwoch Abend (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Erdbeerknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 41.125,
+      "quantity": 42,
+      "recipes": [
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Süße Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.875,
+          "times_on_menu": 1,
+          "qty_one_cook": 41.125,
+          "qty_total": 41.125,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Gemüselaibchen",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Metro",
+      "audience": "veggie",
+      "quantity_raw": 4.0,
+      "quantity": 4,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "stk",
+          "audience": "veggie",
+          "amount_per_person": 2.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 4.0,
+          "qty_total": 4.0,
+          "portions": 2.0,
+          "portion_servings": 2.0,
+          "meals": [
+            "Donnerstag Mittag (+5→2)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Grammelknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 21.0,
+      "quantity": 21,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.5,
+          "times_on_menu": 1,
+          "qty_one_cook": 21.0,
+          "qty_total": 21.0,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Gulaschsaft",
+      "unit": "kg",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 1.89,
+      "quantity": 2,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.045,
+          "times_on_menu": 1,
+          "qty_one_cook": 1.89,
+          "qty_total": 1.89,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Hascheeknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 45.15,
+      "quantity": 46,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 1.075,
+          "times_on_menu": 1,
+          "qty_one_cook": 45.15,
+          "qty_total": 45.15,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Marillenknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 41.125,
+      "quantity": 42,
+      "recipes": [
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Süße Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.875,
+          "times_on_menu": 1,
+          "qty_one_cook": 41.125,
+          "qty_total": 41.125,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Mischgemüse",
+      "unit": "kg",
+      "aisle": "Tiefkühl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 2.9375,
+      "quantity": 3,
+      "recipes": [
+        "Fleischlaibchen"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Fleischlaibchen",
+          "unit": "kg",
+          "audience": "all",
+          "amount_per_person": 0.0625,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.9375,
+          "qty_total": 2.9375,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Donnerstag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Nougatknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Metro",
+      "audience": "all",
+      "quantity_raw": 41.125,
+      "quantity": 42,
+      "recipes": [
+        "Süße Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Süße Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.875,
+          "times_on_menu": 1,
+          "qty_one_cook": 41.125,
+          "qty_total": 41.125,
+          "portions": 47.0,
+          "portion_servings": 47.0,
+          "meals": [
+            "Freitag Mittag (+5→47)"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Schnittlauch",
+      "unit": "pkg",
+      "aisle": "Tiefkühl",
+      "shop": "Billa",
+      "audience": "all",
+      "quantity_raw": 2.1,
+      "quantity": 3,
+      "recipes": [
+        "Nudelsuppe"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Nudelsuppe",
+          "unit": "pkg",
+          "audience": "all",
+          "amount_per_person": 0.05,
+          "times_on_menu": 1,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Dienstag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Speckknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Vöest",
+      "audience": "all",
+      "quantity_raw": 35.7,
+      "quantity": 36,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "stk",
+          "audience": "all",
+          "amount_per_person": 0.85,
+          "times_on_menu": 1,
+          "qty_one_cook": 35.7,
+          "qty_total": 35.7,
+          "portions": 42.0,
+          "portion_servings": 42.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "Spinatknödel",
+      "unit": "stk",
+      "aisle": "Tiefkühl",
+      "shop": "Metro",
+      "audience": "veggie",
+      "quantity_raw": 10.0,
+      "quantity": 10,
+      "recipes": [
+        "Knödel"
+      ],
+      "breakdown": [
+        {
+          "recipe": "Knödel",
+          "unit": "stk",
+          "audience": "veggie",
+          "amount_per_person": 5.0,
+          "times_on_menu": 1,
+          "qty_one_cook": 10.0,
+          "qty_total": 10.0,
+          "portions": 2.0,
+          "portion_servings": 2.0,
+          "meals": [
+            "Montag Abend"
+          ]
+        }
+      ]
+    }
+  ],
+  "shops": [
+    "Metro",
+    "Billa",
+    "Vöest",
+    "Bäcker vor Ort",
+    "DM",
+    "Spende Spitz",
+    "Spende Honeder",
+    "Spende/Metro?"
+  ],
+  "aisles": [
+    "Backzutaten",
+    "Fleisch",
+    "Frühstück, Backen",
+    "Gemüse",
+    "Gewürze, Essig & Öl",
+    "Knabber-Zeug, Süßes, Koserven",
+    "Milchprodukte",
+    "Nudeln, Einlalgen",
+    "Obst",
+    "Tiefkühl"
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "portions": 42.0,
+  "shops": [
+    {
+      "shop": "Metro",
+      "aisles": [
+        {
+          "aisle": "Backzutaten",
+          "items": [
+            {
+              "qty": "5.875",
+              "unit": "pkg",
+              "item": "Trockengerm",
+              "quantity": 5.875
+            }
+          ]
+        },
+        {
+          "aisle": "Fleisch",
+          "items": [
+            {
+              "qty": "23.5",
+              "unit": "stk",
+              "item": "Bernerwürstel",
+              "quantity": 23.5
+            },
+            {
+              "qty": "35.25",
+              "unit": "stk",
+              "item": "Bratwürstel",
+              "quantity": 35.25
+            },
+            {
+              "qty": "1.175",
+              "unit": "kg",
+              "item": "Extrawurst",
+              "quantity": 1.175
+            },
+            {
+              "qty": "10.07",
+              "unit": "kg",
+              "item": "Faschiertes",
+              "quantity": 10.075
+            },
+            {
+              "qty": "107.5",
+              "unit": "stk",
+              "item": "Frankfurter",
+              "quantity": 107.5
+            },
+            {
+              "qty": "17.62",
+              "unit": "stk",
+              "item": "Käsegriller",
+              "quantity": 17.625
+            },
+            {
+              "qty": "11.75",
+              "unit": "stk",
+              "item": "Käsekrainer",
+              "quantity": 11.75
+            },
+            {
+              "qty": "11.25",
+              "unit": "kg",
+              "item": "Putenbrust",
+              "quantity": 11.25
+            },
+            {
+              "qty": "4",
+              "unit": "stk",
+              "item": "Vegane Schnitzel (veggie)",
+              "quantity": 4.0
+            },
+            {
+              "qty": "3.525",
+              "unit": "kg",
+              "item": "Wursthaschee",
+              "quantity": 3.525
+            }
+          ]
+        },
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "3.4",
+              "unit": "pkg",
+              "item": "Choco-Chips",
+              "quantity": 3.4
+            },
+            {
+              "qty": "2.72",
+              "unit": "kg",
+              "item": "Kaffee",
+              "quantity": 2.72
+            },
+            {
+              "qty": "0.68",
+              "unit": "kg",
+              "item": "Kakao",
+              "quantity": 0.68
+            },
+            {
+              "qty": "2.1",
+              "unit": "el",
+              "item": "Maizena",
+              "quantity": 2.1
+            },
+            {
+              "qty": "6.213",
+              "unit": "kg",
+              "item": "Mehl",
+              "quantity": 6.2125
+            },
+            {
+              "qty": "1.7",
+              "unit": "kg",
+              "item": "Nutella",
+              "quantity": 1.7
+            },
+            {
+              "qty": "0.4365",
+              "unit": "kg",
+              "item": "Staubzucker",
+              "quantity": 0.4365
+            },
+            {
+              "qty": "3.525",
+              "unit": "kg",
+              "item": "Zucker",
+              "quantity": 3.525
+            }
+          ]
+        },
+        {
+          "aisle": "Gemüse",
+          "items": [
+            {
+              "qty": "1.575",
+              "unit": "kg",
+              "item": "Champignons",
+              "quantity": 1.575
+            },
+            {
+              "qty": "1.175",
+              "unit": "pkg",
+              "item": "Champignons",
+              "quantity": 1.175
+            },
+            {
+              "qty": "6.26",
+              "unit": "kg",
+              "item": "Karotten",
+              "quantity": 6.26
+            },
+            {
+              "qty": "9.988",
+              "unit": "kg",
+              "item": "Kartoffeln",
+              "quantity": 9.9875
+            },
+            {
+              "qty": "3.525",
+              "unit": "pkg",
+              "item": "Mais",
+              "quantity": 3.525
+            },
+            {
+              "qty": "4.7",
+              "unit": "stk",
+              "item": "Paprika",
+              "quantity": 4.7
+            },
+            {
+              "qty": "6.3",
+              "unit": "stk",
+              "item": "Salat",
+              "quantity": 6.3
+            },
+            {
+              "qty": "8.9",
+              "unit": "stk",
+              "item": "Salatgurken",
+              "quantity": 8.9
+            },
+            {
+              "qty": "2.1",
+              "unit": "stk",
+              "item": "Sellerie",
+              "quantity": 2.1
+            },
+            {
+              "qty": "6.675",
+              "unit": "stk",
+              "item": "Zucchini",
+              "quantity": 6.675
+            },
+            {
+              "qty": "6.902",
+              "unit": "kg",
+              "item": "Zwiebel",
+              "quantity": 6.9025
+            }
+          ]
+        },
+        {
+          "aisle": "Gewürze, Essig & Öl",
+          "items": [
+            {
+              "qty": "2.1",
+              "unit": "el",
+              "item": "Currypulver",
+              "quantity": 2.1
+            },
+            {
+              "qty": "2.225",
+              "unit": "pkg",
+              "item": "Dill",
+              "quantity": 2.225
+            },
+            {
+              "qty": "0.8375",
+              "unit": "l",
+              "item": "Essig",
+              "quantity": 0.8375
+            },
+            {
+              "qty": "2.35",
+              "unit": "pkg",
+              "item": "Essiggurkerl",
+              "quantity": 2.35
+            },
+            {
+              "qty": "2.225",
+              "unit": "pkg",
+              "item": "Kräuter",
+              "quantity": 2.225
+            },
+            {
+              "qty": "1.175",
+              "unit": "pkg",
+              "item": "Majoran",
+              "quantity": 1.175
+            },
+            {
+              "qty": "1.175",
+              "unit": "pkg",
+              "item": "Muskat-Nuss",
+              "quantity": 1.175
+            },
+            {
+              "qty": "0.898",
+              "unit": "l",
+              "item": "Olivenöl",
+              "quantity": 0.898
+            },
+            {
+              "qty": "1.05",
+              "unit": "pkg",
+              "item": "Oregano",
+              "quantity": 1.05
+            },
+            {
+              "qty": "2.1",
+              "unit": "pkg",
+              "item": "Pfeffer",
+              "quantity": 2.1
+            },
+            {
+              "qty": "3.15",
+              "unit": "pkg",
+              "item": "Salz",
+              "quantity": 3.15
+            },
+            {
+              "qty": "0.42",
+              "unit": "kg",
+              "item": "Senf",
+              "quantity": 0.42
+            },
+            {
+              "qty": "0.094",
+              "unit": "l",
+              "item": "Tafelessig",
+              "quantity": 0.094
+            },
+            {
+              "qty": "1.05",
+              "unit": "pkg",
+              "item": "Thymian",
+              "quantity": 1.05
+            },
+            {
+              "qty": "2.1",
+              "unit": "pkg",
+              "item": "Tomaten Gewürfelt",
+              "quantity": 2.1
+            },
+            {
+              "qty": "3.15",
+              "unit": "pkg",
+              "item": "Tomaten Passiert",
+              "quantity": 3.15
+            },
+            {
+              "qty": "3.15",
+              "unit": "pkg",
+              "item": "Tomatenmark",
+              "quantity": 3.15
+            },
+            {
+              "qty": "1.175",
+              "unit": "pkg",
+              "item": "Zimt",
+              "quantity": 1.175
+            },
+            {
+              "qty": "8.4",
+              "unit": "el",
+              "item": "Öl",
+              "quantity": 8.4
+            },
+            {
+              "qty": "4.7",
+              "unit": "l",
+              "item": "Öl",
+              "quantity": 4.7
+            }
+          ]
+        },
+        {
+          "aisle": "Knabber-Zeug, Süßes, Koserven",
+          "items": [
+            {
+              "qty": "8.4",
+              "unit": "pkg",
+              "item": "Kraut",
+              "quantity": 8.4
+            }
+          ]
+        },
+        {
+          "aisle": "Milchprodukte",
+          "items": [
+            {
+              "qty": "8.318",
+              "unit": "kg",
+              "item": "Butter",
+              "quantity": 8.3175
+            },
+            {
+              "qty": "56.67",
+              "unit": "stk",
+              "item": "Eier",
+              "quantity": 56.675
+            },
+            {
+              "qty": "1.175",
+              "unit": "kg",
+              "item": "Gouda",
+              "quantity": 1.175
+            },
+            {
+              "qty": "8",
+              "unit": "pkg",
+              "item": "Haloumi (veggie)",
+              "quantity": 8.0
+            },
+            {
+              "qty": "6.8",
+              "unit": "kg",
+              "item": "Joghurt",
+              "quantity": 6.8
+            },
+            {
+              "qty": "1.175",
+              "unit": "l",
+              "item": "Joghurt",
+              "quantity": 1.175
+            },
+            {
+              "qty": "2.35",
+              "unit": "kg",
+              "item": "Käse Gerieben",
+              "quantity": 2.35
+            },
+            {
+              "qty": "44.9",
+              "unit": "l",
+              "item": "Milch",
+              "quantity": 44.8975
+            },
+            {
+              "qty": "1.05",
+              "unit": "pkg",
+              "item": "Parmesan",
+              "quantity": 1.05
+            },
+            {
+              "qty": "2.225",
+              "unit": "l",
+              "item": "Sauerrahm",
+              "quantity": 2.225
+            },
+            {
+              "qty": "1.05",
+              "unit": "l",
+              "item": "Schlagobers",
+              "quantity": 1.05
+            }
+          ]
+        },
+        {
+          "aisle": "Nudeln, Einlalgen",
+          "items": [
+            {
+              "qty": "1.7",
+              "unit": "kg",
+              "item": "Backerbsen",
+              "quantity": 1.7
+            },
+            {
+              "qty": "3.525",
+              "unit": "kg",
+              "item": "Fleckerl",
+              "quantity": 3.525
+            },
+            {
+              "qty": "21.15",
+              "unit": "stk",
+              "item": "Kartoffelpürree",
+              "quantity": 21.15
+            },
+            {
+              "qty": "1.762",
+              "unit": "kg",
+              "item": "Reis",
+              "quantity": 1.7625
+            },
+            {
+              "qty": "5.25",
+              "unit": "kg",
+              "item": "Spaghetti",
+              "quantity": 5.25
+            },
+            {
+              "qty": "4.2",
+              "unit": "kg",
+              "item": "Spätzle",
+              "quantity": 4.2
+            },
+            {
+              "qty": "5.25",
+              "unit": "kg",
+              "item": "Suppennudeln",
+              "quantity": 5.25
+            }
+          ]
+        },
+        {
+          "aisle": "Obst",
+          "items": [
+            {
+              "qty": "4.08",
+              "unit": "kg",
+              "item": "Bananen",
+              "quantity": 4.08
+            },
+            {
+              "qty": "47",
+              "unit": "stk",
+              "item": "Jausenäpfel",
+              "quantity": 47.0
+            },
+            {
+              "qty": "4.08",
+              "unit": "kg",
+              "item": "Nektarinen",
+              "quantity": 4.08
+            }
+          ]
+        },
+        {
+          "aisle": "Tiefkühl",
+          "items": [
+            {
+              "qty": "4",
+              "unit": "stk",
+              "item": "Gemüselaibchen (veggie)",
+              "quantity": 4.0
+            },
+            {
+              "qty": "2.938",
+              "unit": "kg",
+              "item": "Mischgemüse",
+              "quantity": 2.9375
+            },
+            {
+              "qty": "41.12",
+              "unit": "stk",
+              "item": "Nougatknödel",
+              "quantity": 41.125
+            },
+            {
+              "qty": "10",
+              "unit": "stk",
+              "item": "Spinatknödel (veggie)",
+              "quantity": 10.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Billa",
+      "aisles": [
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "9.15",
+              "unit": "kg",
+              "item": "Brot",
+              "quantity": 9.15
+            },
+            {
+              "qty": "4.08",
+              "unit": "pkg",
+              "item": "CiniMinis",
+              "quantity": 4.08
+            }
+          ]
+        },
+        {
+          "aisle": "Gewürze, Essig & Öl",
+          "items": [
+            {
+              "qty": "1.05",
+              "unit": "pkg",
+              "item": "Basilikum",
+              "quantity": 1.05
+            },
+            {
+              "qty": "1.175",
+              "unit": "pkg",
+              "item": "Knoblauchgranulat",
+              "quantity": 1.175
+            }
+          ]
+        },
+        {
+          "aisle": "Obst",
+          "items": [
+            {
+              "qty": "2.72",
+              "unit": "kg",
+              "item": "Weintrauben",
+              "quantity": 2.72
+            }
+          ]
+        },
+        {
+          "aisle": "Tiefkühl",
+          "items": [
+            {
+              "qty": "1.175",
+              "unit": "kg",
+              "item": "Erbsen",
+              "quantity": 1.175
+            },
+            {
+              "qty": "2.1",
+              "unit": "pkg",
+              "item": "Schnittlauch",
+              "quantity": 2.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Vöest",
+      "aisles": [
+        {
+          "aisle": "Tiefkühl",
+          "items": [
+            {
+              "qty": "41.12",
+              "unit": "stk",
+              "item": "Erdbeerknödel",
+              "quantity": 41.125
+            },
+            {
+              "qty": "21",
+              "unit": "stk",
+              "item": "Grammelknödel",
+              "quantity": 21.0
+            },
+            {
+              "qty": "1.89",
+              "unit": "kg",
+              "item": "Gulaschsaft",
+              "quantity": 1.89
+            },
+            {
+              "qty": "45.15",
+              "unit": "stk",
+              "item": "Hascheeknödel",
+              "quantity": 45.15
+            },
+            {
+              "qty": "41.12",
+              "unit": "stk",
+              "item": "Marillenknödel",
+              "quantity": 41.125
+            },
+            {
+              "qty": "35.7",
+              "unit": "stk",
+              "item": "Speckknödel",
+              "quantity": 35.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Bäcker vor Ort",
+      "aisles": [
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "94",
+              "unit": "stk",
+              "item": "Semmerl",
+              "quantity": 94.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "DM",
+      "aisles": [
+        {
+          "aisle": "Gewürze, Essig & Öl",
+          "items": [
+            {
+              "qty": "11.12",
+              "unit": "l",
+              "item": "Gemüsesuppe",
+              "quantity": 11.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Spende Spitz",
+      "aisles": [
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "0.68",
+              "unit": "kg",
+              "item": "Cremehonig",
+              "quantity": 0.68
+            },
+            {
+              "qty": "0.672",
+              "unit": "kg",
+              "item": "Marmelade",
+              "quantity": 0.672
+            }
+          ]
+        },
+        {
+          "aisle": "Gewürze, Essig & Öl",
+          "items": [
+            {
+              "qty": "2.184",
+              "unit": "kg",
+              "item": "Ketchup",
+              "quantity": 2.18375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Spende Honeder",
+      "aisles": [
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "2.35",
+              "unit": "kg",
+              "item": "Knödelbrot",
+              "quantity": 2.35
+            },
+            {
+              "qty": "5.287",
+              "unit": "kg",
+              "item": "Semmelbrösel",
+              "quantity": 5.2875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "shop": "Spende/Metro?",
+      "aisles": [
+        {
+          "aisle": "Frühstück, Backen",
+          "items": [
+            {
+              "qty": "84",
+              "unit": "stk",
+              "item": "Weckerl",
+              "quantity": 84.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
