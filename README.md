@@ -1,6 +1,6 @@
 # Camp kitchen planner
 
-SQLite model of your summer-camp food plan (from `küchenplan_26.xlsx`).
+SQLite model of your Jungscharlager food plan (from `küchenplan_26.xlsx`).
 
 On import, **Kaiserschmarrn → Palatschinken** (GuteKüche basic recipe, scaled 5→40 portions). Veggie-only lines (Spinatknödel, Vegane Schnitzel, Gemüselaibchen, Haloumi) scale by vegetarian headcount, not the full camp.
 

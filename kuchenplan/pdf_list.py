@@ -148,7 +148,7 @@ def write_pdf(out_path: Path, conn=None) -> Path:
     )
 
     story = []
-    story.append(Paragraph("Einkaufsliste Sommerlager 2026", title_style))
+    story.append(Paragraph("Einkaufsliste Jungscharlager 2026", title_style))
     story.append(
         Paragraph(
             f"Basis {portions:g} Portionen · Mi–Sa +5 → 47 · Mengen auf ganze Zahlen "
@@ -209,7 +209,7 @@ def write_pdf(out_path: Path, conn=None) -> Path:
 
     # markdown twin
     md = [
-        "# Einkaufsliste Sommerlager 2026",
+        "# Einkaufsliste Jungscharlager 2026",
         "",
         f"Basis {portions:g} Portionen; Mi–Sa +5 → 47. "
         "Mengen auf ganze Zahlen (Tomaten in 500 g-Schritten).",

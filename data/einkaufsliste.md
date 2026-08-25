@@ -1,4 +1,4 @@
-# Einkaufsliste Sommerlager 2026
+# Einkaufsliste Jungscharlager 2026
 
 Basis 42 Portionen; Mi–Sa +5 → 47. Mengen auf ganze Zahlen (Tomaten in 500 g-Schritten).
 
