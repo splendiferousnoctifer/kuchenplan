@@ -570,10 +570,11 @@ def import_xlsx(xlsx_path: Path, db_path: Path | None = None) -> Path:
     init_db(conn)
 
     cur = conn.execute(
-        "INSERT INTO camp (name, year, notes) VALUES (?, ?, ?)",
+        "INSERT INTO camp (name, year, start_date, notes) VALUES (?, ?, ?, ?)",
         (
             "Jungscharlager",
             2026,
+            "2026-08-30",
             "Imported from küchenplan_26.xlsx; Kaiserschmarrn → Palatschinken",
         ),
     )

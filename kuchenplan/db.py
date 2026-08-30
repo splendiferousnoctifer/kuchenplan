@@ -3,9 +3,12 @@ from __future__ import annotations
 import math
 import re
 import sqlite3
+from datetime import date, timedelta
 from pathlib import Path
 
 from . import DEFAULT_DB, SCHEMA_PATH
+
+DEFAULT_START_DATE = "2026-08-30"
 
 
 def connect(db_path: Path | str | None = None) -> sqlite3.Connection:
@@ -14,12 +17,61 @@ def connect(db_path: Path | str | None = None) -> sqlite3.Connection:
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
+    ensure_schema(conn)
     return conn
 
 
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
     conn.commit()
+    ensure_schema(conn)
+
+
+def ensure_schema(conn: sqlite3.Connection) -> None:
+    """Light migrations for existing databases."""
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(camp)")}
+    if cols and "start_date" not in cols:
+        conn.execute("ALTER TABLE camp ADD COLUMN start_date TEXT")
+        conn.execute(
+            "UPDATE camp SET start_date = ? WHERE start_date IS NULL",
+            (DEFAULT_START_DATE,),
+        )
+        conn.commit()
+
+
+def camp_start_date(conn: sqlite3.Connection, camp_id: int = 1) -> date | None:
+    row = conn.execute(
+        "SELECT start_date FROM camp WHERE id = ?", (camp_id,)
+    ).fetchone()
+    if not row or not row["start_date"]:
+        return None
+    return date.fromisoformat(str(row["start_date"]))
+
+
+def day_date(start: date, day_index: int) -> date:
+    return start + timedelta(days=day_index)
+
+
+def format_day_date(d: date) -> str:
+    return f"{d.day}.{d.month}."
+
+
+def meal_day_label(
+    day_name: str,
+    day_index: int,
+    start: date | None,
+    meal: str | None = None,
+    *,
+    headcount_note: str | None = None,
+) -> str:
+    label = day_name
+    if start is not None:
+        label = f"{day_name} {format_day_date(day_date(start, day_index))}"
+    if meal:
+        label = f"{label} {meal}"
+    if headcount_note:
+        label = f"{label} ({headcount_note})"
+    return label
 
 
 def portion_equivalents(conn: sqlite3.Connection, camp_id: int = 1) -> float:
@@ -175,7 +227,7 @@ def explain_ingredient(
         app = float(r["amount_per_person"])
         meals = conn.execute(
             """
-            SELECT ms.day_name, ms.meal, ms.headcount_note
+            SELECT ms.day_name, ms.day_index, ms.meal, ms.headcount_note
             FROM meal_recipe mr
             JOIN meal_slot ms ON ms.id = mr.meal_slot_id
             JOIN recipe r ON r.id = mr.recipe_id
@@ -187,6 +239,7 @@ def explain_ingredient(
             """,
             (camp_id, r["recipe"]),
         ).fetchall()
+        start = camp_start_date(conn, camp_id)
         meal_labels = []
         qty_total = 0.0
         scale_sum = 0.0
@@ -198,7 +251,9 @@ def explain_ingredient(
             qty_total += app * scale
             scale_sum += scale
             extra = parse_headcount_extra(m["headcount_note"])
-            label = f"{m['day_name']} {m['meal']}"
+            label = meal_day_label(
+                m["day_name"], m["day_index"], start, m["meal"]
+            )
             if extra:
                 label += f" (+{extra:g}→{scale:g})"
             meal_labels.append(label)

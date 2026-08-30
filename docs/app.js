@@ -101,15 +101,22 @@ function renderCalc() {
   `;
 }
 
+function dayHeading(meals) {
+  const m = meals[0];
+  if (m.date_label) return `${m.day} · ${m.date_label}`;
+  return m.day;
+}
+
 function renderMenu() {
   const byDay = new Map();
   for (const m of DATA.menu) {
-    if (!byDay.has(m.day)) byDay.set(m.day, []);
-    byDay.get(m.day).push(m);
+    const key = m.day_index ?? m.day;
+    if (!byDay.has(key)) byDay.set(key, []);
+    byDay.get(key).push(m);
   }
   const board = document.getElementById("menu-board");
   board.innerHTML = [...byDay.entries()]
-    .map(([day, meals]) => {
+    .map(([, meals]) => {
       const body = meals
         .map((m) => {
           const chips = m.recipes
@@ -131,7 +138,7 @@ function renderMenu() {
           </div>`;
         })
         .join("");
-      return `<article class="day-block"><h3>${esc(day)}</h3>${body}</article>`;
+      return `<article class="day-block"><h3>${esc(dayHeading(meals))}</h3>${body}</article>`;
     })
     .join("");
 

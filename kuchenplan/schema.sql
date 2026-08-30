@@ -5,6 +5,7 @@ CREATE TABLE camp (
   id INTEGER PRIMARY KEY,
   name TEXT NOT NULL,
   year INTEGER NOT NULL,
+  start_date TEXT,               -- ISO date; day_index 0 = start_date (Sonntag)
   notes TEXT
 );
 

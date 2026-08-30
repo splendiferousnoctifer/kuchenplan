@@ -8,8 +8,12 @@ from pathlib import Path
 
 from .db import (
     attendance_breakdown,
+    camp_start_date,
     connect,
+    day_date,
     explain_ingredient,
+    format_day_date,
+    meal_day_label,
     portion_equivalents,
     shopping_lines,
     veggie_headcount,
@@ -25,6 +29,7 @@ def export_snapshot(conn=None) -> dict:
         conn = connect()
 
     camp = dict(conn.execute("SELECT * FROM camp WHERE id = 1").fetchone())
+    start = camp_start_date(conn)
     attendance = [dict(r) for r in attendance_breakdown(conn)]
     portions = portion_equivalents(conn)
     veggies = veggie_headcount(conn)
@@ -64,10 +69,13 @@ def export_snapshot(conn=None) -> dict:
                 scale = portions
         else:
             scale = portions
+        day_d = day_date(start, ms["day_index"]) if start else None
         menu.append(
             {
                 "day_index": ms["day_index"],
                 "day": ms["day_name"],
+                "date": day_d.isoformat() if day_d else None,
+                "date_label": format_day_date(day_d) if day_d else None,
                 "meal": ms["meal"],
                 "headcount_note": ms["headcount_note"],
                 "scale": scale,
@@ -107,11 +115,16 @@ def export_snapshot(conn=None) -> dict:
             (r["id"],),
         ).fetchone()[0]
         meals = [
-            f"{m['day_name']} {m['meal']}"
-            + (f" ({m['headcount_note']})" if m["headcount_note"] else "")
+            meal_day_label(
+                m["day_name"],
+                m["day_index"],
+                start,
+                m["meal"],
+                headcount_note=m["headcount_note"],
+            )
             for m in conn.execute(
                 """
-                SELECT ms.day_name, ms.meal, ms.headcount_note
+                SELECT ms.day_name, ms.day_index, ms.meal, ms.headcount_note
                 FROM meal_recipe mr
                 JOIN meal_slot ms ON ms.id = mr.meal_slot_id
                 WHERE mr.recipe_id = ? AND ms.camp_id = 1

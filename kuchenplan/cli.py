@@ -10,8 +10,11 @@ from pathlib import Path
 from . import DEFAULT_DB
 from .db import (
     attendance_breakdown,
+    camp_start_date,
     connect,
     explain_ingredient,
+    format_day_date,
+    meal_day_label,
     portion_equivalents,
     recipe_cook_counts,
     shopping_lines,
@@ -60,9 +63,10 @@ def cmd_people(args: argparse.Namespace) -> None:
 
 def cmd_menu(args: argparse.Namespace) -> None:
     conn = connect(args.db)
+    start = camp_start_date(conn, args.camp)
     rows = conn.execute(
         """
-        SELECT ms.day_name, ms.meal, GROUP_CONCAT(r.name, ', ') AS recipes,
+        SELECT ms.day_name, ms.day_index, ms.meal, GROUP_CONCAT(r.name, ', ') AS recipes,
                ms.headcount_note, ms.notes, ms.gluten_notes
         FROM meal_slot ms
         LEFT JOIN meal_recipe mr ON mr.meal_slot_id = ms.id
@@ -81,7 +85,8 @@ def cmd_menu(args: argparse.Namespace) -> None:
         if r["notes"]:
             extra.append(str(r["notes"]))
         suffix = f"  ({'; '.join(extra)})" if extra else ""
-        print(f"{r['day_name']:<12} {r['meal']:<10} {r['recipes']}{suffix}")
+        day = meal_day_label(r["day_name"], r["day_index"], start)
+        print(f"{day:<22} {r['meal']:<10} {r['recipes']}{suffix}")
     conn.close()
 
 
