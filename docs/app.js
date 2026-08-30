@@ -35,6 +35,16 @@ async function boot() {
   });
   DATA = await res.json();
   document.title = `Kuchenplan · ${DATA.camp.name} ${DATA.camp.year}`;
+  const foot = document.getElementById("data-foot");
+  if (foot) {
+    const stamp = DATA.exported_at
+      ? new Date(DATA.exported_at).toLocaleString("de-AT", {
+          dateStyle: "short",
+          timeStyle: "short",
+        })
+      : document.documentElement.dataset.version || "unbekannt";
+    foot.textContent = `Datenstand ${stamp} · Jungscharlager 2026 · Quelle: Küchenplan-Workbook`;
+  }
   renderCalc();
   renderMenu();
   fillFilters();

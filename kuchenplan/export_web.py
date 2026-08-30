@@ -228,14 +228,13 @@ def export_snapshot(conn=None) -> dict:
 def _stamp_index_html(docs: Path, version: str) -> None:
     index = docs / "index.html"
     text = index.read_text(encoding="utf-8")
-    if 'data-version="' in text:
-        text = re.sub(r'data-version="[^"]*"', f'data-version="{version}"', text)
-    else:
-        text = text.replace(
-            '<html lang="de">',
-            f'<html lang="de" data-version="{version}">',
-            1,
-        )
+    text = re.sub(r'data-version="[^"]*"', f'data-version="{version}"', text)
+    text = re.sub(r'href="styles\.css(?:\?v=[^"]*)?"', f'href="styles.css?v={version}"', text)
+    text = re.sub(
+        r'src="app\.js(?:\?v=[^"]*)?"',
+        f'src="app.js?v={version}"',
+        text,
+    )
     index.write_text(text, encoding="utf-8")
 
 
