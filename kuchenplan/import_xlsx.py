@@ -605,6 +605,15 @@ def _apply_steckerlbrot_swap(conn, camp_id: int) -> None:
     _set_meal_recipes(conn, thu_id, ["Knödel", "Steckerlbrot"])
 
 
+def _apply_tuesday_lunch_override(conn, camp_id: int) -> None:
+    """Drop Gurkensalat from Tuesday Mittag."""
+    slot_id = _meal_slot_id(conn, camp_id, "Dienstag", "Mittag")
+    if slot_id is None:
+        print("WARNING: meal slot missing for Tuesday lunch override")
+        return
+    _set_meal_recipes(conn, slot_id, ["Grüner Salat", "Spaghetti"])
+
+
 def _apply_menu_overrides(conn, camp_id: int) -> None:
     """Drop Zucchinicremesuppe — note 'keine suppe 2025'."""
     slot = conn.execute(
@@ -861,6 +870,7 @@ def import_xlsx(xlsx_path: Path, db_path: Path | None = None) -> Path:
     _apply_menu_overrides(conn, camp_id)
     _apply_evening_menu_swaps(conn, camp_id)
     _apply_steckerlbrot_swap(conn, camp_id)
+    _apply_tuesday_lunch_override(conn, camp_id)
 
     # --- shopping_done extras ---
     sd = wb["shopping_done"]

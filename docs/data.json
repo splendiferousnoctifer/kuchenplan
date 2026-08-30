@@ -147,7 +147,6 @@
       "gluten_notes": "nudeln (susi)",
       "recipes": [
         "Grüner Salat",
-        "Gurkensalat",
         "Spaghetti"
       ]
     },
@@ -1125,9 +1124,8 @@
       "name": "Gurkensalat",
       "notes": null,
       "source": "küchenplan_26.xlsx",
-      "on_menu": 2,
+      "on_menu": 1,
       "meals": [
-        "Dienstag 1.9. Mittag",
         "Dienstag 1.9. Abend"
       ],
       "lines": [
@@ -2227,8 +2225,8 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 2.1,
-      "quantity": 3,
+      "quantity_raw": 1.05,
+      "quantity": 2,
       "recipes": [
         "Gurkensalat"
       ],
@@ -2238,13 +2236,12 @@
           "unit": "pkg",
           "audience": "all",
           "amount_per_person": 0.025,
-          "times_on_menu": 2,
+          "times_on_menu": 1,
           "qty_one_cook": 1.05,
-          "qty_total": 2.1,
+          "qty_total": 1.05,
           "portions": 42.0,
-          "portion_servings": 84.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Mittag",
             "Dienstag 1.9. Abend"
           ]
         }
@@ -2256,7 +2253,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 0.81875,
+      "quantity_raw": 0.66125,
       "quantity": 1,
       "recipes": [
         "Grüner Salat",
@@ -2284,13 +2281,12 @@
           "unit": "l",
           "audience": "all",
           "amount_per_person": 0.00375,
-          "times_on_menu": 2,
+          "times_on_menu": 1,
           "qty_one_cook": 0.1575,
-          "qty_total": 0.315,
+          "qty_total": 0.1575,
           "portions": 42.0,
-          "portion_servings": 84.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Mittag",
             "Dienstag 1.9. Abend"
           ]
         },
@@ -2557,7 +2553,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 0.88175,
+      "quantity_raw": 0.79775,
       "quantity": 1,
       "recipes": [
         "Grüner Salat",
@@ -2587,13 +2583,12 @@
           "unit": "l",
           "audience": "all",
           "amount_per_person": 0.002,
-          "times_on_menu": 2,
+          "times_on_menu": 1,
           "qty_one_cook": 0.084,
-          "qty_total": 0.168,
+          "qty_total": 0.084,
           "portions": 42.0,
-          "portion_servings": 84.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Mittag",
             "Dienstag 1.9. Abend"
           ]
         },
@@ -4145,8 +4140,8 @@
       "aisle": "Gemüse",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 8.4,
-      "quantity": 9,
+      "quantity_raw": 4.2,
+      "quantity": 5,
       "recipes": [
         "Gurkensalat"
       ],
@@ -4156,13 +4151,12 @@
           "unit": "stk",
           "audience": "all",
           "amount_per_person": 0.1,
-          "times_on_menu": 2,
+          "times_on_menu": 1,
           "qty_one_cook": 4.2,
-          "qty_total": 8.4,
+          "qty_total": 4.2,
           "portions": 42.0,
-          "portion_servings": 84.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Mittag",
             "Dienstag 1.9. Abend"
           ]
         }
