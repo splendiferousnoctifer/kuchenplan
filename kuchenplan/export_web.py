@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .db import (
@@ -223,16 +225,31 @@ def export_snapshot(conn=None) -> dict:
     return out
 
 
+def _stamp_index_html(docs: Path, version: str) -> None:
+    index = docs / "index.html"
+    text = index.read_text(encoding="utf-8")
+    if 'data-version="' in text:
+        text = re.sub(r'data-version="[^"]*"', f'data-version="{version}"', text)
+    else:
+        text = text.replace(
+            '<html lang="de">',
+            f'<html lang="de" data-version="{version}">',
+            1,
+        )
+    index.write_text(text, encoding="utf-8")
+
+
 def write_docs(docs_dir: Path | None = None) -> Path:
     root = Path(__file__).resolve().parent.parent
     docs = docs_dir or (root / "docs")
     docs.mkdir(parents=True, exist_ok=True)
     data = export_snapshot()
+    data["exported_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     path = docs / "data.json"
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    path.write_text(payload, encoding="utf-8")
+    version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+    _stamp_index_html(docs, version)
     return path
 
 

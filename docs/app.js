@@ -29,7 +29,10 @@ let DATA = null;
 let done = loadDone();
 
 async function boot() {
-  const res = await fetch("./data.json");
+  const v = document.documentElement.dataset.version || "";
+  const res = await fetch(`./data.json${v ? `?v=${encodeURIComponent(v)}` : ""}`, {
+    cache: "no-store",
+  });
   DATA = await res.json();
   document.title = `Kuchenplan · ${DATA.camp.name} ${DATA.camp.year}`;
   renderCalc();
