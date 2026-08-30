@@ -518,6 +518,77 @@ def _apply_unit_rewrites(conn) -> None:
             )
 
 
+def _meal_slot_id(conn, camp_id: int, day: str, meal: str) -> int | None:
+    row = conn.execute(
+        """
+        SELECT id FROM meal_slot
+        WHERE camp_id = ? AND day_name = ? AND meal = ?
+        """,
+        (camp_id, day, meal),
+    ).fetchone()
+    return int(row["id"]) if row else None
+
+
+def _set_meal_recipes(conn, slot_id: int, recipes: list[str]) -> None:
+    conn.execute("DELETE FROM meal_recipe WHERE meal_slot_id = ?", (slot_id,))
+    for i, name in enumerate(recipes):
+        row = conn.execute("SELECT id FROM recipe WHERE name = ?", (name,)).fetchone()
+        if not row:
+            print(f"WARNING: recipe missing for menu swap: {name}")
+            continue
+        conn.execute(
+            """
+            INSERT INTO meal_recipe (meal_slot_id, recipe_id, sort_order)
+            VALUES (?, ?, ?)
+            """,
+            (slot_id, row["id"], i),
+        )
+
+
+def _apply_evening_menu_swaps(conn, camp_id: int) -> None:
+    """2026: Knödel Mon→Thu, Palatschinken Tue→Mon (no Nudelsuppe), Fleckerlspeise Thu→Tue."""
+    swaps = [
+        (
+            "Montag",
+            "Abend",
+            ["Palatschinken"],
+            1,
+            "palatschinken, knacker + smores",
+            "mehl (susi)",
+        ),
+        (
+            "Dienstag",
+            "Abend",
+            ["Fleckerlspeise", "Gurkensalat", "Karottensalat"],
+            1,
+            "haschee + schinken",
+            "nudeln (susi)",
+        ),
+        (
+            "Donnerstag",
+            "Abend",
+            ["Knödel"],
+            0,
+            None,
+            "semmelknödel (susi bringt)",
+        ),
+    ]
+    for day, meal, recipes, veggie, notes, gluten in swaps:
+        slot_id = _meal_slot_id(conn, camp_id, day, meal)
+        if slot_id is None:
+            print(f"WARNING: meal slot missing for swap: {day} {meal}")
+            continue
+        conn.execute(
+            """
+            UPDATE meal_slot
+            SET veggie_option = ?, notes = ?, gluten_notes = ?
+            WHERE id = ?
+            """,
+            (veggie, notes, gluten, slot_id),
+        )
+        _set_meal_recipes(conn, slot_id, recipes)
+
+
 def _apply_menu_overrides(conn, camp_id: int) -> None:
     """Drop Zucchinicremesuppe — note 'keine suppe 2025'."""
     slot = conn.execute(
@@ -772,6 +843,7 @@ def import_xlsx(xlsx_path: Path, db_path: Path | None = None) -> Path:
             )
 
     _apply_menu_overrides(conn, camp_id)
+    _apply_evening_menu_swaps(conn, camp_id)
 
     # --- shopping_done extras ---
     sd = wb["shopping_done"]

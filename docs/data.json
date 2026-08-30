@@ -112,11 +112,11 @@
       "meal": "Abend",
       "headcount_note": null,
       "scale": 42.0,
-      "veggie_option": 0,
-      "notes": null,
-      "gluten_notes": "semmelknödel (susi bringt)",
+      "veggie_option": 1,
+      "notes": "palatschinken, knacker + smores",
+      "gluten_notes": "mehl (susi)",
       "recipes": [
-        "Knödel"
+        "Palatschinken"
       ]
     },
     {
@@ -160,11 +160,12 @@
       "headcount_note": null,
       "scale": 42.0,
       "veggie_option": 1,
-      "notes": "palatschinken, knacker + smores",
-      "gluten_notes": "mehl (susi)",
+      "notes": "haschee + schinken",
+      "gluten_notes": "nudeln (susi)",
       "recipes": [
-        "Nudelsuppe",
-        "Palatschinken"
+        "Fleckerlspeise",
+        "Gurkensalat",
+        "Karottensalat"
       ]
     },
     {
@@ -252,13 +253,11 @@
       "meal": "Abend",
       "headcount_note": "+5",
       "scale": 47.0,
-      "veggie_option": 1,
-      "notes": "haschee + schinken",
-      "gluten_notes": "nudeln (susi)",
+      "veggie_option": 0,
+      "notes": null,
+      "gluten_notes": "semmelknödel (susi bringt)",
       "recipes": [
-        "Fleckerlspeise",
-        "Gurkensalat",
-        "Karottensalat"
+        "Knödel"
       ]
     },
     {
@@ -451,7 +450,7 @@
       "source": "küchenplan_26.xlsx",
       "on_menu": 1,
       "meals": [
-        "Donnerstag 3.9. Abend (+5)"
+        "Dienstag 1.9. Abend"
       ],
       "lines": [
         {
@@ -1129,7 +1128,7 @@
       "on_menu": 2,
       "meals": [
         "Dienstag 1.9. Mittag",
-        "Donnerstag 3.9. Abend (+5)"
+        "Dienstag 1.9. Abend"
       ],
       "lines": [
         {
@@ -1184,7 +1183,7 @@
       "source": "küchenplan_26.xlsx",
       "on_menu": 1,
       "meals": [
-        "Donnerstag 3.9. Abend (+5)"
+        "Dienstag 1.9. Abend"
       ],
       "lines": [
         {
@@ -1283,7 +1282,7 @@
       "source": "küchenplan_26.xlsx",
       "on_menu": 1,
       "meals": [
-        "Montag 31.8. Abend"
+        "Donnerstag 3.9. Abend (+5)"
       ],
       "lines": [
         {
@@ -1424,10 +1423,8 @@
       "name": "Nudelsuppe",
       "notes": null,
       "source": "küchenplan_26.xlsx",
-      "on_menu": 1,
-      "meals": [
-        "Dienstag 1.9. Abend"
-      ],
+      "on_menu": 0,
+      "meals": [],
       "lines": [
         {
           "ingredient": "Backerbsen",
@@ -1492,7 +1489,7 @@
       "source": "https://www.gutekueche.at/einfaches-palatschinkenrezept-rezept-4278",
       "on_menu": 1,
       "meals": [
-        "Dienstag 1.9. Abend"
+        "Montag 31.8. Abend"
       ],
       "lines": [
         {
@@ -2230,7 +2227,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 2.225,
+      "quantity_raw": 2.1,
       "quantity": 3,
       "recipes": [
         "Gurkensalat"
@@ -2242,13 +2239,13 @@
           "audience": "all",
           "amount_per_person": 0.025,
           "times_on_menu": 2,
-          "qty_one_cook": 1.1125,
-          "qty_total": 2.225,
-          "portions": 44.5,
-          "portion_servings": 89.0,
+          "qty_one_cook": 1.05,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 84.0,
           "meals": [
             "Dienstag 1.9. Mittag",
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -2259,7 +2256,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 0.8375,
+      "quantity_raw": 0.81875,
       "quantity": 1,
       "recipes": [
         "Grüner Salat",
@@ -2288,13 +2285,13 @@
           "audience": "all",
           "amount_per_person": 0.00375,
           "times_on_menu": 2,
-          "qty_one_cook": 0.166875,
-          "qty_total": 0.33375,
-          "portions": 44.5,
-          "portion_servings": 89.0,
+          "qty_one_cook": 0.1575,
+          "qty_total": 0.315,
+          "portions": 42.0,
+          "portion_servings": 84.0,
           "meals": [
             "Dienstag 1.9. Mittag",
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         },
         {
@@ -2347,11 +2344,10 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "DM",
       "audience": "all",
-      "quantity_raw": 11.125,
-      "quantity": 12,
+      "quantity_raw": 5.875,
+      "quantity": 6,
       "recipes": [
-        "Backerbsensuppe",
-        "Nudelsuppe"
+        "Backerbsensuppe"
       ],
       "breakdown": [
         {
@@ -2366,20 +2362,6 @@
           "portion_servings": 47.0,
           "meals": [
             "Freitag 4.9. Mittag (+5→47)"
-          ]
-        },
-        {
-          "recipe": "Nudelsuppe",
-          "unit": "l",
-          "audience": "all",
-          "amount_per_person": 0.125,
-          "times_on_menu": 1,
-          "qty_one_cook": 5.25,
-          "qty_total": 5.25,
-          "portions": 42.0,
-          "portion_servings": 42.0,
-          "meals": [
-            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -2575,7 +2557,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 0.898,
+      "quantity_raw": 0.88175,
       "quantity": 1,
       "recipes": [
         "Grüner Salat",
@@ -2606,13 +2588,13 @@
           "audience": "all",
           "amount_per_person": 0.002,
           "times_on_menu": 2,
-          "qty_one_cook": 0.089,
-          "qty_total": 0.178,
-          "portions": 44.5,
-          "portion_servings": 89.0,
+          "qty_one_cook": 0.084,
+          "qty_total": 0.168,
+          "portions": 42.0,
+          "portion_servings": 84.0,
           "meals": [
             "Dienstag 1.9. Mittag",
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         },
         {
@@ -2621,12 +2603,12 @@
           "audience": "all",
           "amount_per_person": 0.00125,
           "times_on_menu": 1,
-          "qty_one_cook": 0.05875,
-          "qty_total": 0.05875,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 0.0525,
+          "qty_total": 0.0525,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         },
         {
@@ -2755,7 +2737,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         }
       ]
@@ -2810,7 +2792,7 @@
       "aisle": "Gewürze, Essig & Öl",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 0.094,
+      "quantity_raw": 0.084,
       "quantity": 1,
       "recipes": [
         "Karottensalat"
@@ -2822,12 +2804,12 @@
           "audience": "all",
           "amount_per_person": 0.002,
           "times_on_menu": 1,
-          "qty_one_cook": 0.094,
-          "qty_total": 0.094,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 0.084,
+          "qty_total": 0.084,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -3011,7 +2993,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -3069,7 +3051,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -3380,7 +3362,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         }
       ]
@@ -3410,7 +3392,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -3586,7 +3568,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -3667,11 +3649,10 @@
       "aisle": "Nudeln, Einlalgen",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 1.7,
+      "quantity_raw": 1.175,
       "quantity": 2,
       "recipes": [
-        "Backerbsensuppe",
-        "Nudelsuppe"
+        "Backerbsensuppe"
       ],
       "breakdown": [
         {
@@ -3687,20 +3668,6 @@
           "meals": [
             "Freitag 4.9. Mittag (+5→47)"
           ]
-        },
-        {
-          "recipe": "Nudelsuppe",
-          "unit": "kg",
-          "audience": "all",
-          "amount_per_person": 0.0125,
-          "times_on_menu": 1,
-          "qty_one_cook": 0.525,
-          "qty_total": 0.525,
-          "portions": 42.0,
-          "portion_servings": 42.0,
-          "meals": [
-            "Dienstag 1.9. Abend"
-          ]
         }
       ]
     },
@@ -3710,7 +3677,7 @@
       "aisle": "Nudeln, Einlalgen",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 3.525,
+      "quantity_raw": 3.15,
       "quantity": 4,
       "recipes": [
         "Fleckerlspeise"
@@ -3722,12 +3689,12 @@
           "audience": "all",
           "amount_per_person": 0.075,
           "times_on_menu": 1,
-          "qty_one_cook": 3.525,
-          "qty_total": 3.525,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 3.15,
+          "qty_total": 3.15,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -3845,34 +3812,6 @@
       ]
     },
     {
-      "ingredient": "Suppennudeln",
-      "unit": "kg",
-      "aisle": "Nudeln, Einlalgen",
-      "shop": "Metro",
-      "audience": "all",
-      "quantity_raw": 5.25,
-      "quantity": 6,
-      "recipes": [
-        "Nudelsuppe"
-      ],
-      "breakdown": [
-        {
-          "recipe": "Nudelsuppe",
-          "unit": "kg",
-          "audience": "all",
-          "amount_per_person": 0.125,
-          "times_on_menu": 1,
-          "qty_one_cook": 5.25,
-          "qty_total": 5.25,
-          "portions": 42.0,
-          "portion_servings": 42.0,
-          "meals": [
-            "Dienstag 1.9. Abend"
-          ]
-        }
-      ]
-    },
-    {
       "ingredient": "Trockengerm",
       "unit": "pkg",
       "aisle": "Backzutaten",
@@ -3906,7 +3845,7 @@
       "aisle": "Knabber-Zeug, Süßes, Koserven",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 4.2,
+      "quantity_raw": 4.7,
       "quantity": 5,
       "recipes": [
         "Knödel"
@@ -3918,12 +3857,12 @@
           "audience": "all",
           "amount_per_person": 0.1,
           "times_on_menu": 1,
-          "qty_one_cook": 4.2,
-          "qty_total": 4.2,
-          "portions": 42.0,
-          "portion_servings": 42.0,
+          "qty_one_cook": 4.7,
+          "qty_total": 4.7,
+          "portions": 47.0,
+          "portion_servings": 47.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -4020,12 +3959,11 @@
       "aisle": "Gemüse",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 6.26,
-      "quantity": 7,
+      "quantity_raw": 5.06,
+      "quantity": 6,
       "recipes": [
         "Backerbsensuppe",
         "Karottensalat",
-        "Nudelsuppe",
         "Spaghetti"
       ],
       "breakdown": [
@@ -4049,22 +3987,8 @@
           "audience": "all",
           "amount_per_person": 0.03,
           "times_on_menu": 1,
-          "qty_one_cook": 1.41,
-          "qty_total": 1.41,
-          "portions": 47.0,
-          "portion_servings": 47.0,
-          "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
-          ]
-        },
-        {
-          "recipe": "Nudelsuppe",
-          "unit": "kg",
-          "audience": "all",
-          "amount_per_person": 0.025,
-          "times_on_menu": 1,
-          "qty_one_cook": 1.05,
-          "qty_total": 1.05,
+          "qty_one_cook": 1.26,
+          "qty_total": 1.26,
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
@@ -4221,7 +4145,7 @@
       "aisle": "Gemüse",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 8.9,
+      "quantity_raw": 8.4,
       "quantity": 9,
       "recipes": [
         "Gurkensalat"
@@ -4233,13 +4157,13 @@
           "audience": "all",
           "amount_per_person": 0.1,
           "times_on_menu": 2,
-          "qty_one_cook": 4.45,
-          "qty_total": 8.9,
-          "portions": 44.5,
-          "portion_servings": 89.0,
+          "qty_one_cook": 4.2,
+          "qty_total": 8.4,
+          "portions": 42.0,
+          "portion_servings": 84.0,
           "meals": [
             "Dienstag 1.9. Mittag",
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -4321,7 +4245,7 @@
       "aisle": "Gemüse",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 6.9025,
+      "quantity_raw": 6.7525,
       "quantity": 7,
       "recipes": [
         "Bosner",
@@ -4352,12 +4276,12 @@
           "audience": "all",
           "amount_per_person": 0.03,
           "times_on_menu": 1,
-          "qty_one_cook": 1.41,
-          "qty_total": 1.41,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 1.26,
+          "qty_total": 1.26,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         },
         {
@@ -4848,7 +4772,7 @@
       "aisle": "Fleisch",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 3.525,
+      "quantity_raw": 3.15,
       "quantity": 4,
       "recipes": [
         "Fleckerlspeise"
@@ -4860,12 +4784,12 @@
           "audience": "all",
           "amount_per_person": 0.075,
           "times_on_menu": 1,
-          "qty_one_cook": 3.525,
-          "qty_total": 3.525,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 3.15,
+          "qty_total": 3.15,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -4973,7 +4897,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -5164,7 +5088,7 @@
       "aisle": "Milchprodukte",
       "shop": "Metro",
       "audience": "all",
-      "quantity_raw": 2.35,
+      "quantity_raw": 2.1,
       "quantity": 3,
       "recipes": [
         "Fleckerlspeise"
@@ -5176,12 +5100,12 @@
           "audience": "all",
           "amount_per_person": 0.05,
           "times_on_menu": 1,
-          "qty_one_cook": 2.35,
-          "qty_total": 2.35,
-          "portions": 47.0,
-          "portion_servings": 47.0,
+          "qty_one_cook": 2.1,
+          "qty_total": 2.1,
+          "portions": 42.0,
+          "portion_servings": 42.0,
           "meals": [
-            "Donnerstag 3.9. Abend (+5→47)"
+            "Dienstag 1.9. Abend"
           ]
         }
       ]
@@ -5245,7 +5169,7 @@
           "portions": 42.0,
           "portion_servings": 42.0,
           "meals": [
-            "Dienstag 1.9. Abend"
+            "Montag 31.8. Abend"
           ]
         },
         {
@@ -5453,8 +5377,8 @@
       "aisle": "Tiefkühl",
       "shop": "Vöest",
       "audience": "all",
-      "quantity_raw": 21.0,
-      "quantity": 21,
+      "quantity_raw": 23.5,
+      "quantity": 24,
       "recipes": [
         "Knödel"
       ],
@@ -5465,12 +5389,12 @@
           "audience": "all",
           "amount_per_person": 0.5,
           "times_on_menu": 1,
-          "qty_one_cook": 21.0,
-          "qty_total": 21.0,
-          "portions": 42.0,
-          "portion_servings": 42.0,
+          "qty_one_cook": 23.5,
+          "qty_total": 23.5,
+          "portions": 47.0,
+          "portion_servings": 47.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -5481,8 +5405,8 @@
       "aisle": "Tiefkühl",
       "shop": "Vöest",
       "audience": "all",
-      "quantity_raw": 1.89,
-      "quantity": 2,
+      "quantity_raw": 2.115,
+      "quantity": 3,
       "recipes": [
         "Knödel"
       ],
@@ -5493,12 +5417,12 @@
           "audience": "all",
           "amount_per_person": 0.045,
           "times_on_menu": 1,
-          "qty_one_cook": 1.89,
-          "qty_total": 1.89,
-          "portions": 42.0,
-          "portion_servings": 42.0,
+          "qty_one_cook": 2.115,
+          "qty_total": 2.115,
+          "portions": 47.0,
+          "portion_servings": 47.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -5509,8 +5433,8 @@
       "aisle": "Tiefkühl",
       "shop": "Vöest",
       "audience": "all",
-      "quantity_raw": 45.15,
-      "quantity": 46,
+      "quantity_raw": 50.525,
+      "quantity": 51,
       "recipes": [
         "Knödel"
       ],
@@ -5521,12 +5445,12 @@
           "audience": "all",
           "amount_per_person": 1.075,
           "times_on_menu": 1,
-          "qty_one_cook": 45.15,
-          "qty_total": 45.15,
-          "portions": 42.0,
-          "portion_servings": 42.0,
+          "qty_one_cook": 50.525,
+          "qty_total": 50.525,
+          "portions": 47.0,
+          "portion_servings": 47.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -5616,41 +5540,13 @@
       ]
     },
     {
-      "ingredient": "Schnittlauch",
-      "unit": "pkg",
-      "aisle": "Tiefkühl",
-      "shop": "Billa",
-      "audience": "all",
-      "quantity_raw": 2.1,
-      "quantity": 3,
-      "recipes": [
-        "Nudelsuppe"
-      ],
-      "breakdown": [
-        {
-          "recipe": "Nudelsuppe",
-          "unit": "pkg",
-          "audience": "all",
-          "amount_per_person": 0.05,
-          "times_on_menu": 1,
-          "qty_one_cook": 2.1,
-          "qty_total": 2.1,
-          "portions": 42.0,
-          "portion_servings": 42.0,
-          "meals": [
-            "Dienstag 1.9. Abend"
-          ]
-        }
-      ]
-    },
-    {
       "ingredient": "Speckknödel",
       "unit": "stk",
       "aisle": "Tiefkühl",
       "shop": "Vöest",
       "audience": "all",
-      "quantity_raw": 35.7,
-      "quantity": 36,
+      "quantity_raw": 39.95,
+      "quantity": 40,
       "recipes": [
         "Knödel"
       ],
@@ -5661,12 +5557,12 @@
           "audience": "all",
           "amount_per_person": 0.85,
           "times_on_menu": 1,
-          "qty_one_cook": 35.7,
-          "qty_total": 35.7,
-          "portions": 42.0,
-          "portion_servings": 42.0,
+          "qty_one_cook": 39.95,
+          "qty_total": 39.95,
+          "portions": 47.0,
+          "portion_servings": 47.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -5694,7 +5590,7 @@
           "portions": 2.0,
           "portion_servings": 2.0,
           "meals": [
-            "Montag 31.8. Abend"
+            "Donnerstag 3.9. Abend (+5→2)"
           ]
         }
       ]
