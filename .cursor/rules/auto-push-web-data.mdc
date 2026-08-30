@@ -1,0 +1,15 @@
+---
+description: Commit and push after changes to the static site or kitchen data
+globs: docs/**,data/**
+alwaysApply: false
+---
+
+# Auto-commit web and data changes
+
+After editing files under `docs/` (GitHub Pages site) or `data/` (DB, exports, shopping lists):
+
+1. Run `kuchenplan export-web` if Python/DB changes affect the site snapshot.
+2. Commit all related changes with a concise message focused on why.
+3. Push to `origin/main` so GitHub Pages updates (`/docs` on `main`).
+
+Do this without waiting for the user to ask, unless they explicitly said not to commit/push in that turn.

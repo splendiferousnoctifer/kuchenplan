@@ -18,22 +18,22 @@
     <h1>Jungscharlager 2026</h1>
     <p class="lede">Speiseplan, Rezepte und Einkauf — Mengen für 42 Portionen (Mi–Sa +5 → 47), Lagerwoche ab Sonntag 30.8.2026.</p>
     <nav class="tabs" role="tablist" aria-label="Bereiche">
-      <button type="button" class="tab is-active" data-panel="rechnung" role="tab" aria-selected="true">Rechnung</button>
-      <button type="button" class="tab" data-panel="menu" role="tab" aria-selected="false">Speiseplan</button>
+      <button type="button" class="tab" data-panel="rechnung" role="tab" aria-selected="false" hidden>Rechnung</button>
+      <button type="button" class="tab is-active" data-panel="menu" role="tab" aria-selected="true">Speiseplan</button>
       <button type="button" class="tab" data-panel="recipes" role="tab" aria-selected="false">Rezepte</button>
       <button type="button" class="tab" data-panel="shopping" role="tab" aria-selected="false">Einkauf</button>
     </nav>
   </header>
 
   <main>
-    <section id="panel-rechnung" class="panel is-active" role="tabpanel">
+    <section id="panel-rechnung" class="panel" role="tabpanel" hidden>
       <h2>Wie die Mengen entstehen</h2>
       <p class="section-lead" id="calc-lead"></p>
       <div class="calc-grid" id="calc-grid"></div>
       <div class="formula-box" id="formula-box"></div>
     </section>
 
-    <section id="panel-menu" class="panel" role="tabpanel" hidden>
+    <section id="panel-menu" class="panel is-active" role="tabpanel">
       <h2>Speiseplan</h2>
       <p class="section-lead">Klick auf ein Gericht öffnet das Rezept mit skalierten Mengen.</p>
       <div id="menu-board" class="menu-board"></div>
