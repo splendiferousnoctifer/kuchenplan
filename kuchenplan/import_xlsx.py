@@ -589,6 +589,22 @@ def _apply_evening_menu_swaps(conn, camp_id: int) -> None:
         _set_meal_recipes(conn, slot_id, recipes)
 
 
+def _apply_steckerlbrot_swap(conn, camp_id: int) -> None:
+    """Move Steckerlbrot Wed→Thu with the raini note."""
+    wed_id = _meal_slot_id(conn, camp_id, "Mittwoch", "Abend")
+    thu_id = _meal_slot_id(conn, camp_id, "Donnerstag", "Abend")
+    if wed_id is None or thu_id is None:
+        print("WARNING: meal slot missing for steckerlbrot swap")
+        return
+    conn.execute("UPDATE meal_slot SET notes = NULL WHERE id = ?", (wed_id,))
+    _set_meal_recipes(conn, wed_id, ["Putenschnitzel", "Kartoffelsalat"])
+    conn.execute(
+        "UPDATE meal_slot SET notes = ? WHERE id = ?",
+        ("steckerlbrot (raini ?)", thu_id),
+    )
+    _set_meal_recipes(conn, thu_id, ["Knödel", "Steckerlbrot"])
+
+
 def _apply_menu_overrides(conn, camp_id: int) -> None:
     """Drop Zucchinicremesuppe — note 'keine suppe 2025'."""
     slot = conn.execute(
@@ -844,6 +860,7 @@ def import_xlsx(xlsx_path: Path, db_path: Path | None = None) -> Path:
 
     _apply_menu_overrides(conn, camp_id)
     _apply_evening_menu_swaps(conn, camp_id)
+    _apply_steckerlbrot_swap(conn, camp_id)
 
     # --- shopping_done extras ---
     sd = wb["shopping_done"]

@@ -207,12 +207,11 @@
       "headcount_note": "+5",
       "scale": 47.0,
       "veggie_option": 1,
-      "notes": "steckerlbrot (raini ?)",
+      "notes": null,
       "gluten_notes": "schnitzel (susi -> moritz/laura mitgeben)",
       "recipes": [
         "Kartoffelsalat",
-        "Putenschnitzel",
-        "Steckerlbrot"
+        "Putenschnitzel"
       ]
     },
     {
@@ -254,10 +253,11 @@
       "headcount_note": "+5",
       "scale": 47.0,
       "veggie_option": 0,
-      "notes": null,
+      "notes": "steckerlbrot (raini ?)",
       "gluten_notes": "semmelknödel (susi bringt)",
       "recipes": [
-        "Knödel"
+        "Knödel",
+        "Steckerlbrot"
       ]
     },
     {
@@ -1973,7 +1973,7 @@
       "source": "küchenplan_26.xlsx",
       "on_menu": 1,
       "meals": [
-        "Mittwoch 2.9. Abend (+5)"
+        "Donnerstag 3.9. Abend (+5)"
       ],
       "lines": [
         {
@@ -3420,7 +3420,7 @@
           "portions": 47.0,
           "portion_servings": 47.0,
           "meals": [
-            "Mittwoch 2.9. Abend (+5→47)"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
@@ -3834,7 +3834,7 @@
           "portions": 47.0,
           "portion_servings": 47.0,
           "meals": [
-            "Mittwoch 2.9. Abend (+5→47)"
+            "Donnerstag 3.9. Abend (+5→47)"
           ]
         }
       ]
