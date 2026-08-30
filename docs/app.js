@@ -28,12 +28,8 @@ function saveDone(set) {
 let DATA = null;
 let done = loadDone();
 
-async function boot() {
-  const v = document.documentElement.dataset.version || "";
-  const res = await fetch(`./data.json${v ? `?v=${encodeURIComponent(v)}` : ""}`, {
-    cache: "no-store",
-  });
-  DATA = await res.json();
+async function boot(data) {
+  DATA = data;
   document.title = `Kuchenplan · ${DATA.camp.name} ${DATA.camp.year}`;
   const foot = document.getElementById("data-foot");
   if (foot) {
@@ -364,7 +360,4 @@ function wireDrawer() {
   });
 }
 
-boot().catch((err) => {
-  document.querySelector("main").innerHTML =
-    `<p style="color:#8a3a12">Daten konnten nicht geladen werden: ${esc(err.message)}</p>`;
-});
+export { boot, esc };

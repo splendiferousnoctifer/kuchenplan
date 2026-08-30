@@ -225,17 +225,48 @@ def export_snapshot(conn=None) -> dict:
     return out
 
 
-def _stamp_index_html(docs: Path, version: str) -> None:
+def _stamp_index_html(docs: Path, version: str, exported_at: str) -> None:
     index = docs / "index.html"
     text = index.read_text(encoding="utf-8")
     text = re.sub(r'data-version="[^"]*"', f'data-version="{version}"', text)
     text = re.sub(r'href="styles\.css(?:\?v=[^"]*)?"', f'href="styles.css?v={version}"', text)
     text = re.sub(
-        r'src="app\.js(?:\?v=[^"]*)?"',
-        f'src="app.js?v={version}"',
+        r'src="loader\.[^"]+\.js"',
+        f'src="loader.{version}.js"',
         text,
     )
+    stamp = datetime.fromisoformat(exported_at).strftime("%d.%m.%y, %H:%M")
+    text = re.sub(
+        r'<p class="build-stamp"[^>]*>.*?</p>',
+        f'<p class="build-stamp">Datenstand {stamp} UTC</p>',
+        text,
+        count=1,
+    )
     index.write_text(text, encoding="utf-8")
+
+
+def _write_versioned_assets(docs: Path, data: dict, version: str) -> None:
+    data_path = docs / f"data.{version}.js"
+    data_path.write_text(
+        f"export default {json.dumps(data, ensure_ascii=False)};\n",
+        encoding="utf-8",
+    )
+    loader_path = docs / f"loader.{version}.js"
+    loader_path.write_text(
+        f"""import DATA from "./data.{version}.js";
+import {{ boot, esc }} from "./app.js?v={version}";
+
+boot(DATA).catch((err) => {{
+  document.querySelector("main").innerHTML =
+    `<p style="color:#8a3a12">Daten konnten nicht geladen werden: ${{esc(err.message)}}</p>`;
+}});
+""",
+        encoding="utf-8",
+    )
+    for pattern in ("data.*.js", "loader.*.js"):
+        for old in docs.glob(pattern):
+            if old.name not in {data_path.name, loader_path.name}:
+                old.unlink(missing_ok=True)
 
 
 def write_docs(docs_dir: Path | None = None) -> Path:
@@ -243,12 +274,14 @@ def write_docs(docs_dir: Path | None = None) -> Path:
     docs = docs_dir or (root / "docs")
     docs.mkdir(parents=True, exist_ok=True)
     data = export_snapshot()
-    data["exported_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    exported_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    data["exported_at"] = exported_at
     path = docs / "data.json"
     payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     path.write_text(payload, encoding="utf-8")
     version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
-    _stamp_index_html(docs, version)
+    _write_versioned_assets(docs, data, version)
+    _stamp_index_html(docs, version, exported_at)
     return path
 
 
