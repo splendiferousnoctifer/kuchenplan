@@ -553,7 +553,7 @@ def _apply_evening_menu_swaps(conn, camp_id: int) -> None:
             "Abend",
             ["Palatschinken"],
             1,
-            "palatschinken, knacker + smores",
+            "palatschinken, knacker",
             "mehl (susi)",
         ),
         (
@@ -561,7 +561,7 @@ def _apply_evening_menu_swaps(conn, camp_id: int) -> None:
             "Abend",
             ["Fleckerlspeise", "Gurkensalat", "Karottensalat"],
             1,
-            "haschee + schinken",
+            "haschee + schinken, smores",
             "nudeln (susi)",
         ),
         (
