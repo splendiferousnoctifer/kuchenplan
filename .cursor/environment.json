@@ -1,0 +1,17 @@
+{
+  "name": "Kuchenplan",
+  "install": "sudo apt-get update && sudo apt-get install -y python3-venv && python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -e .",
+  "terminals": [
+    {
+      "name": "web",
+      "command": ".venv/bin/python -m http.server 8000 --directory docs",
+      "description": "Serves the static GitHub Pages site (docs/) at http://localhost:8000"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8000
+    }
+  ]
+}
