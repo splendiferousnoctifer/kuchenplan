@@ -7,7 +7,7 @@ name = "kuchenplan"
 version = "0.1.0"
 description = "Camp kitchen recipes, headcount, and shopping calculations"
 requires-python = ">=3.10"
-dependencies = ["openpyxl>=3.1.0"]
+dependencies = ["openpyxl>=3.1.0", "reportlab>=4.0.0"]
 
 [project.scripts]
 kuchenplan = "kuchenplan.cli:main"
